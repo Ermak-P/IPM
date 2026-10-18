@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "command": "python -B .ai/tools/tests/test_acceptance.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/tests/test_scan.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py validate --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py check-scaffold --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py version --json",
+      "exit_code": 0
+    }
+  ],
+  "contracts": "v1.0 manifest, schemas, lifecycle and canonical records unchanged",
+  "host_content_sha256_snapshot_unchanged": true,
+  "host_files_compared": 1148,
+  "increment": "Stage 2 A only",
+  "increment_a_tests": {
+    "failed": 0,
+    "passed": 15,
+    "skipped": 0
+  },
+  "network_or_llm_required": false,
+  "preflight": {
+    "check-scaffold": "passed",
+    "stage1_failed": 0,
+    "stage1_passed": 28,
+    "validate": "passed",
+    "version": "1.0.0"
+  },
+  "remaining": [
+    "Increment B and subsequent increments not implemented",
+    "No extraction report: extraction deliberately outside Increment A",
+    "Concurrent hostile filesystem mutation is not supported",
+    "Filename-based exclusions do not identify all secrets"
+  ],
+  "repeated_scan_stdout_identical": true,
+  "repository_scan_counts": {
+    "errors": 0,
+    "skipped": 49,
+    "sources": 7
+  },
+  "stage1_tests": {
+    "failed": 0,
+    "passed": 28,
+    "skipped": 0
+  }
+}

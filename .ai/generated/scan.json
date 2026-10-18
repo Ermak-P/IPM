@@ -1,0 +1,305 @@
+{
+  "command": "scan",
+  "counts": {
+    "errors": 0,
+    "skipped": 49,
+    "sources": 7
+  },
+  "errors": [],
+  "exclusions": [
+    "*.g.cs",
+    "*.g.i.cs",
+    "*.generated.*",
+    "*.key",
+    "*.p12",
+    "*.pem",
+    "*.pfx",
+    ".ai",
+    ".aws",
+    ".azure",
+    ".cache",
+    ".env",
+    ".env.*",
+    ".git",
+    ".hg",
+    ".idea",
+    ".local",
+    ".mypy_cache",
+    ".nuget",
+    ".pytest_cache",
+    ".secrets",
+    ".ssh",
+    ".svn",
+    ".venv",
+    ".vs",
+    ".vscode",
+    "TestResults",
+    "__pycache__",
+    "bin",
+    "build",
+    "coverage",
+    "dist",
+    "generated",
+    "node_modules",
+    "obj",
+    "out",
+    "packages",
+    "secrets",
+    "target",
+    "venv"
+  ],
+  "ok": true,
+  "report_version": "1.0",
+  "skipped": [
+    {
+      "path": ".ai",
+      "pattern": ".ai",
+      "reason": "excluded"
+    },
+    {
+      "path": ".git",
+      "pattern": ".git",
+      "reason": "excluded"
+    },
+    {
+      "path": ".gitignore",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": ".idea",
+      "pattern": ".idea",
+      "reason": "excluded"
+    },
+    {
+      "path": ".local",
+      "pattern": ".local",
+      "reason": "excluded"
+    },
+    {
+      "path": "Directory.Build.props",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "NuGet.Config",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "README.md",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "docs/architecture-overview.md",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "docs/business-rules.md",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "docs/dependency-map.md",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "docs/domain-overview.md",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "docs/verification.md",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "global.json",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "packages",
+      "pattern": "packages",
+      "reason": "excluded"
+    },
+    {
+      "path": "src/SyntheticIpm.Api/Program.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Api/bin",
+      "pattern": "bin",
+      "reason": "excluded"
+    },
+    {
+      "path": "src/SyntheticIpm.Api/obj",
+      "pattern": "obj",
+      "reason": "excluded"
+    },
+    {
+      "path": "src/SyntheticIpm.Api/packages.lock.json",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Application/CampaignService.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Application/Contracts.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Application/DistributionService.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Application/ExternalCampaignService.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Application/bin",
+      "pattern": "bin",
+      "reason": "excluded"
+    },
+    {
+      "path": "src/SyntheticIpm.Application/obj",
+      "pattern": "obj",
+      "reason": "excluded"
+    },
+    {
+      "path": "src/SyntheticIpm.Application/packages.lock.json",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Domain/Campaign.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Domain/Content.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Domain/Targeting.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Domain/bin",
+      "pattern": "bin",
+      "reason": "excluded"
+    },
+    {
+      "path": "src/SyntheticIpm.Domain/obj",
+      "pattern": "obj",
+      "reason": "excluded"
+    },
+    {
+      "path": "src/SyntheticIpm.Domain/packages.lock.json",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Infrastructure/InMemoryAdapters.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "src/SyntheticIpm.Infrastructure/bin",
+      "pattern": "bin",
+      "reason": "excluded"
+    },
+    {
+      "path": "src/SyntheticIpm.Infrastructure/obj",
+      "pattern": "obj",
+      "reason": "excluded"
+    },
+    {
+      "path": "src/SyntheticIpm.Infrastructure/packages.lock.json",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "tasks/plan.md",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "tasks/todo.md",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "tests/SyntheticIpm.IntegrationTests/TestResults",
+      "pattern": "TestResults",
+      "reason": "excluded"
+    },
+    {
+      "path": "tests/SyntheticIpm.IntegrationTests/WorkflowTests.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "tests/SyntheticIpm.IntegrationTests/bin",
+      "pattern": "bin",
+      "reason": "excluded"
+    },
+    {
+      "path": "tests/SyntheticIpm.IntegrationTests/obj",
+      "pattern": "obj",
+      "reason": "excluded"
+    },
+    {
+      "path": "tests/SyntheticIpm.IntegrationTests/packages.lock.json",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "tests/SyntheticIpm.UnitTests/DomainTests.cs",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "tests/SyntheticIpm.UnitTests/TestResults",
+      "pattern": "TestResults",
+      "reason": "excluded"
+    },
+    {
+      "path": "tests/SyntheticIpm.UnitTests/bin",
+      "pattern": "bin",
+      "reason": "excluded"
+    },
+    {
+      "path": "tests/SyntheticIpm.UnitTests/obj",
+      "pattern": "obj",
+      "reason": "excluded"
+    },
+    {
+      "path": "tests/SyntheticIpm.UnitTests/packages.lock.json",
+      "reason": "unsupported-source-type"
+    },
+    {
+      "path": "verify.ps1",
+      "reason": "unsupported-source-type"
+    }
+  ],
+  "sources": [
+    {
+      "kind": "dotnet-solution",
+      "path": "SyntheticIpm.sln"
+    },
+    {
+      "kind": "dotnet-project",
+      "path": "src/SyntheticIpm.Api/SyntheticIpm.Api.csproj"
+    },
+    {
+      "kind": "dotnet-project",
+      "path": "src/SyntheticIpm.Application/SyntheticIpm.Application.csproj"
+    },
+    {
+      "kind": "dotnet-project",
+      "path": "src/SyntheticIpm.Domain/SyntheticIpm.Domain.csproj"
+    },
+    {
+      "kind": "dotnet-project",
+      "path": "src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj"
+    },
+    {
+      "kind": "dotnet-project",
+      "path": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj"
+    },
+    {
+      "kind": "dotnet-project",
+      "path": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj"
+    }
+  ],
+  "warnings": [
+    "Discovery only; no contents parsed or technical claims validated.",
+    "All links are skipped. Excluded directories are not traversed.",
+    "Do not scan a concurrently modified tree; filename exclusions are not secret detection."
+  ]
+}

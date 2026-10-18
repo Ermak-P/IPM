@@ -49,5 +49,8 @@ fields and unsupported record formats are rejected. IDs are globally unique.
 The manifest uses JSON syntax, a YAML 1.2 subset; other YAML syntax is deliberately
 not supported by this dependency-free v1 CLI.
 
-No scanners, stack analyzers, graph construction, RAG, integrations or automatic
-knowledge population are implemented. Stage 2 requires separate acceptance.
+Stage 2 Increment A adds read-only discovery through
+`python -B .ai/tools/kb.py scan --json`. See
+[discovery usage and boundaries](docs/population-scan.md).
+Stack analyzers, graph construction, RAG, integrations and automatic knowledge
+population are not implemented. Canonical contracts remain v1.0.

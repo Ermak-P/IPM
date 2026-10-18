@@ -24,6 +24,7 @@ FILES = ['README.md', 'manifest.yaml', 'schema/claim.schema.json', 'schema/evide
          'docs/contract-v1.md', 'tools/kb.py', 'tools/tests/test_acceptance.py',
          'tools/examples/claim.json', 'tools/examples/evidence.json', 'tools/examples/relationship.json',
          'tools/examples/basis.json']
+FILES += ['tools/population_scan.py', 'tools/tests/test_scan.py', 'docs/population-scan.md']
 PLACEHOLDERS = [directory + '/.gitkeep' for directory in DIRECTORIES
                 if directory not in ['schema', 'docs', 'tools', 'tools/tests', 'tools/examples']]
 SOURCE = Path(__file__).resolve().parents[1]
@@ -278,10 +279,23 @@ def validate(base):
 
 def main():
     parser = argparse.ArgumentParser(description='Offline universal architecture knowledge base v1')
-    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version'])
+    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan'])
     parser.add_argument('--root', type=Path, default=Path.cwd(), help='existing host repository directory')
     parser.add_argument('--json', action='store_true', help='machine-readable deterministic output')
+    parser.add_argument('--exclude', action='append', default=[],
+                        help='scan only: additional repository-relative glob or component name (repeatable)')
     args = parser.parse_args()
+    if args.command == 'scan':
+        from population_scan import RepositoryScanner
+        result = RepositoryScanner().scan(args.root, args.exclude)
+        if args.json:
+            print(json.dumps(result, sort_keys=True))
+        else:
+            print('Scan: {sources} sources, {skipped} skipped, {errors} errors'.format(**result['counts']))
+            print(json.dumps(result, indent=2, sort_keys=True))
+        return 0 if result['ok'] else 1
+    if args.exclude:
+        parser.error('--exclude is supported only for scan')
     errors, warnings = [], []
     try:
         if args.command != 'version':
