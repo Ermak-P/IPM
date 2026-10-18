@@ -1,0 +1,108 @@
+{
+  "approved_application_result": {
+    "action": "apply",
+    "canonical_validation": {
+      "errors": [],
+      "ok": true,
+      "warnings": [
+        "Structural validation does not prove claim truth, source authority, or evidence freshness; human review is required."
+      ]
+    },
+    "command": "populate",
+    "fingerprint": "sha256:6eda2db20bc1e1ad613b3560aff97c0f73e8f3d0600ce80131b1a7f18b18d7e2",
+    "meaning": "Records stored; no semantic confirmation or human review implied.",
+    "ok": true,
+    "state": "COMMITTED",
+    "writes": 8
+  },
+  "baseline_fingerprint_restored_after_recovery": true,
+  "dry_run_validation": {
+    "errors": [],
+    "ok": true,
+    "record_counts": {
+      "claims": 4,
+      "evidence": 4,
+      "relationships": 0
+    },
+    "validator": "Contract v1 kb.validate",
+    "warnings": [
+      "Structural validation does not prove claim truth, source authority, or evidence freshness; human review is required."
+    ]
+  },
+  "eligible_operations": 8,
+  "explicit_approval": "sha256:6eda2db20bc1e1ad613b3560aff97c0f73e8f3d0600ce80131b1a7f18b18d7e2",
+  "host_source_hashes_unchanged": true,
+  "idempotent_retry_result": {
+    "action": "apply",
+    "already_applied": true,
+    "command": "populate",
+    "fingerprint": "sha256:6eda2db20bc1e1ad613b3560aff97c0f73e8f3d0600ce80131b1a7f18b18d7e2",
+    "ok": true,
+    "state": "COMMITTED",
+    "writes": 0
+  },
+  "interrupted_status": {
+    "action": "status",
+    "command": "populate",
+    "ok": true,
+    "pending_plans": [
+      "sha256:6eda2db20bc1e1ad613b3560aff97c0f73e8f3d0600ce80131b1a7f18b18d7e2"
+    ],
+    "prepared": [
+      "sha256:6eda2db20bc1e1ad613b3560aff97c0f73e8f3d0600ce80131b1a7f18b18d7e2"
+    ],
+    "recovery_required": true,
+    "transactions": [
+      {
+        "attempt": 1,
+        "fingerprint": "sha256:9858eb2b80269319b87813750e3a39a8ac600c2edf3036cba0344238189e9cf3",
+        "history": [
+          {
+            "at": "2026-10-18T23:28:16.008078Z",
+            "state": "STAGING"
+          },
+          {
+            "at": "2026-10-18T23:28:16.010187Z",
+            "state": "INSTALLING"
+          }
+        ],
+        "installed": 0,
+        "plan": "sha256:6eda2db20bc1e1ad613b3560aff97c0f73e8f3d0600ce80131b1a7f18b18d7e2",
+        "state": "INSTALLING"
+      }
+    ]
+  },
+  "last_verified_assigned": false,
+  "missing_approval_result": {
+    "action": "apply",
+    "command": "populate",
+    "error": "exact-plan-approval-required-use-approve-fingerprint",
+    "ok": false
+  },
+  "new_claim_statuses": [
+    "NEEDS_HUMAN_CONFIRMATION"
+  ],
+  "ordinary_cli_blocked_until_recovery": true,
+  "plan_fingerprint": "sha256:6eda2db20bc1e1ad613b3560aff97c0f73e8f3d0600ce80131b1a7f18b18d7e2",
+  "real_process_exit_code_during_first_install": 71,
+  "recovery_result": {
+    "action": "recover",
+    "canonical_validation": {
+      "errors": [],
+      "ok": true
+    },
+    "command": "populate",
+    "fingerprint": "sha256:6eda2db20bc1e1ad613b3560aff97c0f73e8f3d0600ce80131b1a7f18b18d7e2",
+    "ok": true,
+    "state": "ROLLED_BACK"
+  },
+  "resulting_contract_validation": {
+    "command": "validate",
+    "errors": [],
+    "ok": true,
+    "warnings": [
+      "Structural validation does not prove claim truth, source authority, or evidence freshness; human review is required."
+    ]
+  },
+  "scope": "Disposable synthetic two-project repository, removed after this demonstration"
+}

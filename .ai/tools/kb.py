@@ -1,4 +1,5 @@
 import argparse
+from contextlib import ExitStack
 import hashlib
 from datetime import date, datetime
 import json
@@ -27,6 +28,8 @@ FILES = ['README.md', 'manifest.yaml', 'schema/claim.schema.json', 'schema/evide
 FILES += ['tools/population_scan.py', 'tools/tests/test_scan.py', 'docs/population-scan.md']
 FILES += ['tools/population_dotnet.py', 'tools/tests/test_extract.py', 'docs/population-extract.md']
 FILES += ['tools/population_normalize.py', 'tools/tests/test_normalize.py', 'docs/population-normalize.md']
+FILES += ['tools/population_transaction.py', 'tools/tests/test_population.py', 'docs/population-apply.md']
+FILES += ['.gitignore']
 PLACEHOLDERS = [directory + '/.gitkeep' for directory in DIRECTORIES
                 if directory not in ['schema', 'docs', 'tools', 'tools/tests', 'tools/examples']]
 SOURCE = Path(__file__).resolve().parents[1]
@@ -279,14 +282,57 @@ def validate(base):
     return errors, warnings
 
 
-def main():
+def _main(stack):
     parser = argparse.ArgumentParser(description='Offline universal architecture knowledge base v1')
-    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract', 'normalize'])
+    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract', 'normalize', 'populate'])
+    parser.add_argument('populate_action', nargs='?', choices=['prepare', 'apply', 'status', 'recover'])
     parser.add_argument('--root', type=Path, default=Path.cwd(), help='existing host repository directory')
     parser.add_argument('--json', action='store_true', help='machine-readable deterministic output')
+    parser.add_argument('--plan', help='populate: saved sha256 plan fingerprint, never a file path')
+    parser.add_argument('--approve', help='populate apply: explicit approval of the exact plan fingerprint')
+    parser.add_argument('--dry-run', action='store_true', help='populate apply: validate without applying')
     parser.add_argument('--exclude', action='append', default=[],
-                        help='scan/extract/normalize: additional repository-relative glob or component name (repeatable)')
+                        help='scan/extract/normalize or populate prepare: additional exclusions (repeatable)')
     args = parser.parse_args()
+    if args.command == 'populate':
+        from population_transaction import PopulationStore, PopulationError
+        action = args.populate_action or 'prepare'
+        if args.exclude and action != 'prepare':
+            parser.error('--exclude is supported only for populate prepare')
+        if (args.approve or args.dry_run) and action != 'apply':
+            parser.error('--approve/--dry-run are supported only for populate apply')
+        if action in ['apply', 'recover'] and not args.plan:
+            parser.error('--plan is required for populate apply/recover')
+        if action == 'prepare' and args.plan:
+            parser.error('prepare creates a fresh plan; --plan is not accepted')
+        try:
+            store = PopulationStore(args.root)
+            if action == 'prepare':
+                result = store.prepare(args.exclude)
+            elif action == 'apply':
+                result = store.apply(args.plan, args.approve, args.dry_run)
+            elif action == 'status':
+                result = store.status(args.plan)
+            else:
+                result = store.recover(args.plan)
+        except PopulationError as error:
+            result = {'ok': False, 'error': str(error)}
+        except (OSError, ValueError, TypeError, KeyError, AttributeError):
+            result = {'ok': False, 'error': 'population-input-or-io-error-inspect-status-before-retry'}
+        result.update(command='populate', action=action)
+        print(json.dumps(result, sort_keys=True, **({} if args.json else {'indent': 2})))
+        return 0 if result['ok'] else 1
+    if args.populate_action or args.plan or args.approve or args.dry_run:
+        parser.error('population action/options require the populate command')
+    if args.command != 'version':
+        from population_transaction import normal_operation, PopulationError
+        try:
+            stack.enter_context(normal_operation(args.root))
+        except (PopulationError, OSError, ValueError, TypeError, KeyError, AttributeError):
+            print(json.dumps({'command': args.command, 'ok': False,
+                              'errors': ['Population is busy or recovery is required; run populate status/recover.'],
+                              'warnings': []}, sort_keys=True))
+            return 1
     if args.command in ['scan', 'extract', 'normalize']:
         from population_scan import RepositoryScanner
         result = RepositoryScanner().scan(args.root, args.exclude)
@@ -338,6 +384,11 @@ def main():
     else:
         print(json.dumps(result, indent=2, sort_keys=True))
     return 1 if errors else 0
+
+
+def main():
+    with ExitStack() as stack:
+        return _main(stack)
 
 
 if __name__ == '__main__':

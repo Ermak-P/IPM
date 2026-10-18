@@ -58,7 +58,10 @@ Increment B adds declared .NET metadata extraction through
 Increment C adds read-only v1 proposals and isolated validation through
 `python -B .ai/tools/kb.py normalize --json`; see
 [normalization, time policy and review limitations](docs/population-normalize.md).
-The manifest lists pinned core capabilities; scan/extract/normalize are optional CLI
+Increment D adds explicitly approved add-only population through
+`python -B .ai/tools/kb.py populate prepare --json`; see
+[approval, transaction states and recovery](docs/population-apply.md).
+The manifest lists pinned core capabilities; scan/extract/normalize/populate are optional CLI
 extensions listed by --help, without a canonical format version change.
-Graph construction, RAG, integrations and automatic knowledge population are
-not implemented. Canonical contracts remain v1.0.
+Graph construction, RAG and integrations are not implemented. Population always
+requires exact-plan approval; it does not confirm claims. Canonical contracts remain v1.0.

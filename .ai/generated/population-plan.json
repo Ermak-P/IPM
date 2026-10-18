@@ -1,0 +1,2177 @@
+{
+  "applicable": true,
+  "blocked": [],
+  "canonical": {
+    "entries": {
+      "evidence": {
+        "kind": "directory"
+      },
+      "evidence/.gitkeep": {
+        "hash": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "kind": "file"
+      },
+      "knowledge": {
+        "kind": "directory"
+      },
+      "knowledge/claims": {
+        "kind": "directory"
+      },
+      "knowledge/claims/.gitkeep": {
+        "hash": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "kind": "file"
+      },
+      "knowledge/decisions": {
+        "kind": "directory"
+      },
+      "knowledge/decisions/.gitkeep": {
+        "hash": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "kind": "file"
+      },
+      "knowledge/domains": {
+        "kind": "directory"
+      },
+      "knowledge/domains/.gitkeep": {
+        "hash": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "kind": "file"
+      },
+      "knowledge/open-questions": {
+        "kind": "directory"
+      },
+      "knowledge/open-questions/.gitkeep": {
+        "hash": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "kind": "file"
+      },
+      "knowledge/relationships": {
+        "kind": "directory"
+      },
+      "knowledge/relationships/.gitkeep": {
+        "hash": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "kind": "file"
+      },
+      "manifest.yaml": {
+        "hash": "sha256:cf66deb83a7c1503ee0b9a26bebe8ffe64a0d4ff8a3690b8040e4c3a1d4ab239",
+        "kind": "file"
+      },
+      "schema": {
+        "kind": "directory"
+      },
+      "schema/claim.schema.json": {
+        "hash": "sha256:38d2b0564786f19262a5c6697d6b593e95fd04a4011485f32d8ffd5fa453568f",
+        "kind": "file"
+      },
+      "schema/evidence.schema.json": {
+        "hash": "sha256:b39b5f4f08c18abb57a6c9f49e168dae20394b5d51537784b311310aa739626e",
+        "kind": "file"
+      },
+      "schema/relationship.schema.json": {
+        "hash": "sha256:546ef458de4a2cf46eec33196de0eb09a21b114eb8c237373184cbcf557201fe",
+        "kind": "file"
+      },
+      "sources": {
+        "kind": "directory"
+      },
+      "sources/.gitkeep": {
+        "hash": "sha256:01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "kind": "file"
+      }
+    },
+    "fingerprint": "sha256:d7072d1376af5be4b4d801c1ec02d22159561e7d9afbd0441000016652293829"
+  },
+  "classifications": [
+    {
+      "classification": "add",
+      "id": "claim.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "claim.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+      "reasons": [],
+      "record_type": "claims",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    },
+    {
+      "classification": "add",
+      "id": "evidence.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+      "reasons": [],
+      "record_type": "evidence",
+      "related_ids": []
+    }
+  ],
+  "eligible": [
+    {
+      "action": "add",
+      "hash": "sha256:a61abd68fb89f8a5d2e32a57d1e60f012266128c44318ac50b02058772de4228",
+      "id": "claim.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9",
+      "path": "knowledge/claims/population-4cf5e64b74d007eff4134b49890ac561fdd2ea2a2524ed4a61a7f6e3d7de992d.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:ba8811828187c952ffd1c2a2266ddb81f31c33c518d5dc5f12bc19dbf4439f30",
+      "id": "claim.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f",
+      "path": "knowledge/claims/population-8f2bf3e6b476537c4f848505db27a1913f82911b488f6cd29081757001eab8ca.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:5cd33dc52e9b7a0978cda3410afa88e16d15f7f220d695b5898f2c0398e4fe6a",
+      "id": "claim.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4",
+      "path": "knowledge/claims/population-9d595539c0acf67ffb6d3363208bad822144beea7bd262da1358452cc486735c.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:523995cc20c884a0cccd9bd28ed0b18e7f6fe948e1012f68848a928ebdef24a6",
+      "id": "claim.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c",
+      "path": "knowledge/claims/population-1821eeea2de3b403d6831b72286093889add362cbe23ca12b8e59ae17de85cac.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:e300ea7449503fac2ea5084e228eb74cbb4b0f19adda629285edfa0ba8129a93",
+      "id": "claim.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+      "path": "knowledge/claims/population-37e1ed5cd68a2fba9dd02710a506d7c0060943100035ac9b8cd29c7f94311370.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:62c8a8d96488227cbac563a89d6f58f1628ddab2eb330bcafff9da3ac586e87f",
+      "id": "claim.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+      "path": "knowledge/claims/population-8123b2d87b194b194e709ce4f78cdfc6d6734c35b838ee62092d23d54969318a.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:09e9bf7a45741b91b559fcf0e6986410ae3d5d3094bc4436f596d215f3c93aff",
+      "id": "claim.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+      "path": "knowledge/claims/population-841f603b44469807d68a47a3326d8dc89857781f6343e6dfbce6384829e476cc.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:94764a34e664474ced0985a6dcae90d76282553adbbaf4173e1379142599e716",
+      "id": "claim.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+      "path": "knowledge/claims/population-7131aa1686c9091342f24396e1b83922d5b8183e62246c52f16f40496091e69f.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:80c9e6e8e691547ac2009fe13bcb3b4b3ba865081b10738699f732dc3247f17a",
+      "id": "claim.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f",
+      "path": "knowledge/claims/population-654aa964e47614be394992a7fde1e984bb49e3c4c7ce769a93e8b03edda451ef.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:3a93483940d816d869c50df80ef6f5821badcb625de2aa89be3ceaa05a954d3d",
+      "id": "claim.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+      "path": "knowledge/claims/population-37715d48305b4c66cdbb558750b84869aa790107a28b56dd1e0eb62284935936.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:cdb71f9d8ecba6f34b8f9de1ec49eb48dad0c4be258131ce49f1756af1c6725a",
+      "id": "claim.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9",
+      "path": "knowledge/claims/population-b8d4bdb3c1c56215b86a8e634e0ea0edf275ffc1eeab39976d3ee1984ae97d5e.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:c1e2acacf462df94e744857660f8ed0597dd36e93030af75e195c86c196951e7",
+      "id": "claim.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+      "path": "knowledge/claims/population-cbcde6c3b583d5fd5f38b2b908c551ff3553ef0e02c2d6627b67a33f55d0a117.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:841ac35f2776ad94179e5359c0b1cb1cf99877cadd83f36a56c3514c5bae9b77",
+      "id": "claim.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4",
+      "path": "knowledge/claims/population-323eb601a307e1fc5c7513bba7124998bd1a7ea54c2a3f8a750f9938d75f3b5f.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:717d384fc4e0a8dd963578c53c457d8a3dee66b7a0bb7db493efb727b5199ae7",
+      "id": "claim.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+      "path": "knowledge/claims/population-9abcf14b7996e8e549f80adbf3ac4a4930642c3d94c6ce36aa4e0ff158e00797.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:400268ec52b1466f42ee08e211d75f2ace17214a0bcd3a63a98063edf3fd4155",
+      "id": "claim.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+      "path": "knowledge/claims/population-3723ee291a9129ffb768afab7a65b0ea0a2cb24ece6543a5c879a9aa1067cb36.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:a2c9db6c55ad29b477784f72e647a86f5479b82d88c299e5fab961e329a1fb92",
+      "id": "claim.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9",
+      "path": "knowledge/claims/population-912526bd1fb1c5e7d2fe04e329bc9df07878b69a9c92b0b8578008559f2fc769.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:906507a25978f2603e4b88f4f25acb6a8a7e98bfa99af520447d85aa139d9aac",
+      "id": "claim.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8",
+      "path": "knowledge/claims/population-d634e2682a2d340029c2f6b3358a7b304894874f9c771018cdfa5fdc6649edc9.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:b34867a11a23f29ef06d5500e05dbb62a30984bee7514f54242d69c06031a76e",
+      "id": "claim.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+      "path": "knowledge/claims/population-14351577c51f702be1423a8738221e452ef1eedd251eb6482d272950ca8efcf4.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:e66bf470f001571d33d300405c38bb0c66df8a725ee9469d2946a28a907f25b1",
+      "id": "claim.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49",
+      "path": "knowledge/claims/population-1ad40755761e60bd61c1ded33f8d7239fe4fe99f191ea836f2f9f09c34249f36.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:60cd0e34ba96c745d652ce11e2b97b807e0980a08e0b0d60560008ba48433422",
+      "id": "claim.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6",
+      "path": "knowledge/claims/population-36a47a7c2d99d0acf81d8f993434635c69cb199322d7a7f2019c4776ccecf306.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:d2d9e90b0e12a92869536001861b90ee0bdc97d2ce6d11cfcd8397e0c551fd93",
+      "id": "claim.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18",
+      "path": "knowledge/claims/population-e13bdd2d99f658ee6beefd5c8bcf5ad248732dab6e75f32deb032315276a63c9.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:c2056db0814919113293ce1ff9cb6411803379fe373ba349d116595c4a3346cb",
+      "id": "claim.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+      "path": "knowledge/claims/population-a5fb77add9e2e86011d4cb3a45c148a317834d4add404eb688fb161d1ad07855.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:9e19c3ed0b9bcd4a8fb3d1d164726e954bf5e3b0f57a79c2939aa17eca763fe8",
+      "id": "claim.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6",
+      "path": "knowledge/claims/population-82d82c14bc664bb401f6c4e65e5c25e2a4f257dec556a3100ec56f2ee3c2d0ad.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:077bc72f7af10281b9fab62a8338f9fb03944dcc59ff43a44a00a449b82d3ec3",
+      "id": "claim.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c",
+      "path": "knowledge/claims/population-fd5c8992b563fa01ced74c24ab18cf1dd27e8bf753a2769127614ce890cf6cc9.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:10cba285fad3d0ba7f07537f2a3cb1220880e849a258efbb4e3fb59d4609b34e",
+      "id": "claim.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5",
+      "path": "knowledge/claims/population-f79a3cfa63de53b6d02b2c8cb9a4d93987cac9d26a975426ff2ce71c6e59c5c0.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:7be6aed55eab948236d9bb9179dc35c0e1ae0e22fb75ba574b68272b688679eb",
+      "id": "claim.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+      "path": "knowledge/claims/population-30ea892dae3a3a33ec3e1fb718ed14c37b491c59ca0a2b4dca12bdf518a97c66.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:d5586376f3818062af1dcff484bb7ac166dc06d61291e429d03a9a1918a1f0fc",
+      "id": "claim.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6",
+      "path": "knowledge/claims/population-62d9a234401781ffdcd42997fc9f1538acf300e83ed8cf0eeb01879e3d21a1cf.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:a7f63309d76b354c85356fc7fb3d3441efdcdec3e5603af67985dd258dd71e9a",
+      "id": "claim.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c",
+      "path": "knowledge/claims/population-b29a06036909e72cee6a263507c1634c793ca30c239cf4fe9e8e159a7ebe3bfd.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:f489735c753581f854c86d4be2442020fe4af25b0e25be9c104d48c295c4ceb8",
+      "id": "claim.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+      "path": "knowledge/claims/population-c7c062d90486a70950cbd762ccaebf48527965345e114034b2d42fe97bea466e.json",
+      "record_type": "claims",
+      "requires": [
+        "evidence.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:7650a7a1dec0989c5ebad82b629530bd034a55d87d5aacb9c11a14efd9615df6",
+      "id": "evidence.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9",
+      "path": "evidence/population-067d02b2917adfee70532e3c3c11751a16d429b42ab0586281db979822749887.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:2719b89b02d7379928f0d1483c8fb90b9cbcc8e7d5c99921f80821c3cb4279b7",
+      "id": "evidence.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f",
+      "path": "evidence/population-5ae7675d80cbcaa0c9d5fd65dd5c6b350962cacf1d29e6f5c4bde8303e56ac58.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:f4e6786d837107366372c930cb4abc3800dbc3ba16c858168e5164148d349704",
+      "id": "evidence.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4",
+      "path": "evidence/population-f6df53b335f856517506f66295773aaa3e65f3396bb26382a2219f36947825aa.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:3b26e9a35f2408e628119b9d6e114c08cc48552b0654843dd1eecf6ceb5fac37",
+      "id": "evidence.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c",
+      "path": "evidence/population-a8e3cd8e27fcb59a396c6b4489cd7e77d78353c3a2b4df19ec7faa10e81a0ac6.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:5f2ca43cb6129a48a59b07d93c545a0b9aeaba2e95adddb4b6f122a0820e12f2",
+      "id": "evidence.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+      "path": "evidence/population-cb8144324aa0e6787fd5ba5e861eb1a1d5ceb7e8542cac96d404d009e06bae36.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:4e93ec4728827ab24e53e36d34763fa7587ca5444ce5f3c289f93bcea0dcd120",
+      "id": "evidence.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+      "path": "evidence/population-f84a531a9a8e7042ffeb8c15dc9852cf5dc774f0f8a4238eefb41d9db78c57a9.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:43bf745b7b5a4f3fd5e29ec28b9331bf33419e63659fc26a42d79781f344e4c1",
+      "id": "evidence.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+      "path": "evidence/population-8050e8ae4e38903329b4636e5bcd482d85d6996511d7a703f99fc128dbf3c38b.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:fb20761bc25f932968b0d31181b809591221135c9ce03fc048d06bc55032f951",
+      "id": "evidence.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+      "path": "evidence/population-91c3d60c875ff84962bc67844383f30b647e6d072e117e8df39f1c0250366ec9.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:4c3ef6b4df4102554370658dc171e256a9518c2b22971b4afda1b6d3c9f8c7e4",
+      "id": "evidence.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f",
+      "path": "evidence/population-77b77f4ae8a723b399e7de6ef0e56194952fb1a9f9fe1e6550d41afd08d23b9d.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:973eb6c466a7e8150de379f8759398bff5d90d1a391900cb23ccfe59f21f79e9",
+      "id": "evidence.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+      "path": "evidence/population-934e5a52abdacb281af07883d78a7d909d70dea6732dca991202c9ffb40e6e30.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:5545a43728b76a316db2baed09056ebb2e416a97b45d701597b11a49a3cd5dc3",
+      "id": "evidence.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9",
+      "path": "evidence/population-7d6a335facd69a7f799cabd4d96a39b3003121c988c65bb9b07fb6e0a6959ecd.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:ce91a3a0330f59459ca6382c2fa1c352888fe4527eae6e0113d8f39ed83a76db",
+      "id": "evidence.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+      "path": "evidence/population-7fd895f2b0c9e2b360095030846ec678d218117a9a354b22cd10d3f144665abf.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:f7c2783e91411109138c99d3cde1e9eaf55e97a1154cbd5be2977c9312aba356",
+      "id": "evidence.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4",
+      "path": "evidence/population-93a1e4f40da0a9a0ad639bf06579726cf9eb53a82535494e1fba0f086e474591.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:7c5197d7c25b5b9e3cf4c859982dcad49e7d61cb0b1b79ec56f0e2f78a1f3c56",
+      "id": "evidence.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+      "path": "evidence/population-7a4e978217738ae643a15e4cb3ee627b35e79cb13a71a97f5d769224c9774ac4.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:5e279956db35215c536aff6048c3b9e8032a496732d51f6f363c2051928ab5ea",
+      "id": "evidence.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+      "path": "evidence/population-7cd078cb493d4e3beccd12b96fbc4d6da6428e6c46e137dee248746a9e3a6308.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:7f05fed3823c9993d897eea93759dfaaaf714a16746ce158f9151c101bba8b6e",
+      "id": "evidence.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9",
+      "path": "evidence/population-164cf9baff4c01b48e6c90dd55d460e7b3f580ce305757ab4c10d01eb52e1b8b.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:a9e3571be5db4c1518cf74c4ffe9a4bfd10e7dbc605791981e2a79beb9894986",
+      "id": "evidence.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8",
+      "path": "evidence/population-11639d60cb331fc5c2f36787b3954d7b4c35ba5875f632a1585fa22824a125e6.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:d8a47b2b4e49e27e9ade2489be37b9488163f32a3b35cb31fc3101d44057ae0c",
+      "id": "evidence.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+      "path": "evidence/population-54cd4227fd5bade3f2a0634d77eaf31de107d5c4c8714f369494cceae41fca2f.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:8e778307d99229e05a0d6a6a8d05a32ca8010adfd6ff49141197173a63c6a46b",
+      "id": "evidence.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49",
+      "path": "evidence/population-d135474b57ebc74240a54930f687151bf5bd11fc9f5383cfbc93613ec28d986a.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:b2a91b0d74fd4ba88617d9e5a354e7caa7dee82e21e6805d6ed19de7d2e8c656",
+      "id": "evidence.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6",
+      "path": "evidence/population-840dcaa6e4524b6460da052c0c7f05c9888983d6a646eb8cdea0be67c4f9502e.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:8d0d2503a53b27f4726391303650d98487e39d16fb5b4f3bee357702a51dff94",
+      "id": "evidence.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18",
+      "path": "evidence/population-c1728ee74fe944fad1c23f19240fd2359d31a6757ddc66400063f7d87c5e3bd7.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:e1fa9f44b6aba1cddea67c47eab87c89f3ef0c470504dc3074dec37aad937e87",
+      "id": "evidence.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+      "path": "evidence/population-a319455c5af5a0efafd83ee1c86a8b54752a559e8451dccc00564d806a2eb495.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:4f7850a73990444c5ab6a4c4777e8ad229556b8bf53e131f648b43c1891042dc",
+      "id": "evidence.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6",
+      "path": "evidence/population-cd6f8c8c078a01e3e6134190a956b89d3b86d148075153dfe1da40ebe79dc6ba.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:3548655b80a51c6f5be416bd39cc0a1a441ec800b3a0a9d260272f4a6d129a67",
+      "id": "evidence.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c",
+      "path": "evidence/population-25de733485e2474d1821ee98497f3f3b46c32fb22d64ce0c0be2dde8e2c1f72f.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:4ceaa36f6b05094ca2f1bfe973aed78df5cf8954a60c4e0eba5996c6b3281a37",
+      "id": "evidence.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5",
+      "path": "evidence/population-8edfead81921edbb9800c6cce3d0bed92c0b136ad86961dc7db84dec60d95b36.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:809c193a340cb7d0c963d985f1cc4eaa6d3e017e1f09b996d6278e0cfc451239",
+      "id": "evidence.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+      "path": "evidence/population-05332c2a602f0611e25ced8856ed6fb4ba223f2c2bf8acacd27747a26afbfd31.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:7181c6faf0c7943ad7c8566cb5206e5df23b1e3dae281f10b75554eaf5846ad0",
+      "id": "evidence.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6",
+      "path": "evidence/population-32e8fad9ff8a00be34b9df8501cd40bc981b281acbc6e7adfa049dd650116464.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:ce47145dc48de579a0cdff3fc65caf3969fdc9b78772c1cff0386b9a9c9aea06",
+      "id": "evidence.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c",
+      "path": "evidence/population-fe59bcb6230c5a2b7a8b92721c02fd7e4bcb45f2730dada411df70e43542c91d.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c"
+      ]
+    },
+    {
+      "action": "add",
+      "hash": "sha256:d00d09d8931f68630c125f96265e491320519985f31013768412d96e76b8766c",
+      "id": "evidence.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+      "path": "evidence/population-b44413020eb4f30eed17812762b61b6145b0fd30d1c2b62168cf836997141e2a.json",
+      "record_type": "evidence",
+      "requires": [
+        "claim.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e"
+      ]
+    }
+  ],
+  "fingerprint": "sha256:46957d9d2a5d175d9b9156865f6622da8eeb27c535f7de07da6573ea9e9581c9",
+  "format": "population-plan-v1",
+  "observation": {
+    "captured_at": "2026-10-18T23:28:15.759723Z",
+    "policy": "actual UTC time after live extraction revalidation; never part of IDs or change_set"
+  },
+  "policy": "add-only-entire-plan",
+  "records": {
+    "claims": [
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9"
+        ],
+        "id": "claim.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Repository contains project file \"src/SyntheticIpm.Api/SyntheticIpm.Api.csproj\"; its filename label is \"SyntheticIpm.Api\".",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f"
+        ],
+        "id": "claim.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Repository contains project file \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\"; its filename label is \"SyntheticIpm.UnitTests\".",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4"
+        ],
+        "id": "claim.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares a ProjectReference with Include \"../../src/SyntheticIpm.Domain/SyntheticIpm.Domain.csproj\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c"
+        ],
+        "id": "claim.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{333DB882-6B91-4246-9CAF-76840A56A1CB}\",\"declared_path\":\"tests\\\\SyntheticIpm.IntegrationTests\\\\SyntheticIpm.IntegrationTests.csproj\",\"name\":\"SyntheticIpm.IntegrationTests\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6"
+        ],
+        "id": "claim.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares a PackageReference with Include \"NUnit\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb"
+        ],
+        "id": "claim.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares a PackageReference with Include \"NUnit3TestAdapter\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d"
+        ],
+        "id": "claim.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares PackageReference \"Microsoft.NET.Test.Sdk\" metadata \"Version\" with value \"17.13.0\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d"
+        ],
+        "id": "claim.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares PackageReference \"Microsoft.NET.Test.Sdk\" metadata \"Version\" with value \"17.13.0\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f"
+        ],
+        "id": "claim.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Repository contains project file \"src/SyntheticIpm.Domain/SyntheticIpm.Domain.csproj\"; its filename label is \"SyntheticIpm.Domain\".",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb"
+        ],
+        "id": "claim.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares a PackageReference with Include \"NUnit3TestAdapter\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9"
+        ],
+        "id": "claim.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Repository contains project file \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\"; its filename label is \"SyntheticIpm.IntegrationTests\".",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343"
+        ],
+        "id": "claim.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares a PackageReference with Include \"Microsoft.NET.Test.Sdk\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4"
+        ],
+        "id": "claim.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Repository contains project file \"src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj\"; its filename label is \"SyntheticIpm.Infrastructure\".",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56"
+        ],
+        "id": "claim.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares PackageReference \"NUnit\" metadata \"Version\" with value \"4.5.1\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e"
+        ],
+        "id": "claim.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares PackageReference \"NUnit3TestAdapter\" metadata \"Version\" with value \"6.2.0\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9"
+        ],
+        "id": "claim.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{5751E520-961D-4769-AF60-D7BB815D412A}\",\"declared_path\":\"src\\\\SyntheticIpm.Domain\\\\SyntheticIpm.Domain.csproj\",\"name\":\"SyntheticIpm.Domain\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8"
+        ],
+        "id": "claim.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj\" declares a ProjectReference with Include \"../SyntheticIpm.Application/SyntheticIpm.Application.csproj\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343"
+        ],
+        "id": "claim.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares a PackageReference with Include \"Microsoft.NET.Test.Sdk\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49"
+        ],
+        "id": "claim.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"src/SyntheticIpm.Application/SyntheticIpm.Application.csproj\" declares a ProjectReference with Include \"../SyntheticIpm.Domain/SyntheticIpm.Domain.csproj\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6"
+        ],
+        "id": "claim.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"src/SyntheticIpm.Api/SyntheticIpm.Api.csproj\" declares a ProjectReference with Include \"../SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18"
+        ],
+        "id": "claim.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Repository contains project file \"src/SyntheticIpm.Application/SyntheticIpm.Application.csproj\"; its filename label is \"SyntheticIpm.Application\".",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56"
+        ],
+        "id": "claim.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares PackageReference \"NUnit\" metadata \"Version\" with value \"4.5.1\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6"
+        ],
+        "id": "claim.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{D3F8FDDC-3BF4-48BF-A351-AA0AF066D302}\",\"declared_path\":\"src\\\\SyntheticIpm.Infrastructure\\\\SyntheticIpm.Infrastructure.csproj\",\"name\":\"SyntheticIpm.Infrastructure\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c"
+        ],
+        "id": "claim.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares a ProjectReference with Include \"../../src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5"
+        ],
+        "id": "claim.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{DDB26F01-3178-49ED-B45E-328CDEE4E335}\",\"declared_path\":\"src\\\\SyntheticIpm.Api\\\\SyntheticIpm.Api.csproj\",\"name\":\"SyntheticIpm.Api\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6"
+        ],
+        "id": "claim.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares a PackageReference with Include \"NUnit\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6"
+        ],
+        "id": "claim.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{C00E3082-B4A6-4E6E-B2DD-2D68BCF07691}\",\"declared_path\":\"tests\\\\SyntheticIpm.UnitTests\\\\SyntheticIpm.UnitTests.csproj\",\"name\":\"SyntheticIpm.UnitTests\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c"
+        ],
+        "id": "claim.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{A9086FF1-590D-4AEF-821F-0F6F2288880B}\",\"declared_path\":\"src\\\\SyntheticIpm.Application\\\\SyntheticIpm.Application.csproj\",\"name\":\"SyntheticIpm.Application\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      },
+      {
+        "conflicts_with": [],
+        "depends_on": [],
+        "evidence": [
+          "evidence.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e"
+        ],
+        "id": "claim.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+        "last_verified": null,
+        "provenance": {
+          "actor": "dotnet-candidate-normalizer",
+          "method": "static-dotnet-normalization-v1"
+        },
+        "statement": "Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares PackageReference \"NUnit3TestAdapter\" metadata \"Version\" with value \"6.2.0\". Conditions (not evaluated): [].",
+        "status": "NEEDS_HUMAN_CONFIRMATION",
+        "type": "technical_fact"
+      }
+    ],
+    "evidence": [
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:d39e4e17b4d4e07a563aa63aab5744c527865c67b824da710b40d58e16ed89cf",
+        "description": "Static source observation supporting the narrow declaration: Repository contains project file \"src/SyntheticIpm.Api/SyntheticIpm.Api.csproj\"; its filename label is \"SyntheticIpm.Api\".",
+        "id": "evidence.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9",
+        "location": {
+          "reference": "src/SyntheticIpm.Api/SyntheticIpm.Api.csproj#locations=[{\"column\":1,\"line\":1,\"selector\":\"/Project[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "src/SyntheticIpm.Api/SyntheticIpm.Api.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.0169661627d9e6115b8481e59283774df763cad68b3fd6ae2c77c06bdfa2acdc.a71546a7d7d60436d0e5e61ededd403de34e17b47e48083f0eca8b5fa75963e9"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:43a0f2b500d5b9738aa9cd8c0913d1b47afd7b4d95708dbdc69cbc07d0128e03",
+        "description": "Static source observation supporting the narrow declaration: Repository contains project file \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\"; its filename label is \"SyntheticIpm.UnitTests\".",
+        "id": "evidence.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f",
+        "location": {
+          "reference": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj#locations=[{\"column\":1,\"line\":1,\"selector\":\"/Project[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.0f0867818c69943495d13e5520c5b7a93533b8a362c39bd1ab685bb77c03b8b0.1acd2fbcc69878e75f6251b5ce25cdda7ba33d12c3b40bb06b7bbc8efacee04f"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:43a0f2b500d5b9738aa9cd8c0913d1b47afd7b4d95708dbdc69cbc07d0128e03",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares a ProjectReference with Include \"../../src/SyntheticIpm.Domain/SyntheticIpm.Domain.csproj\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4",
+        "location": {
+          "reference": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj#locations=[{\"column\":1,\"line\":7,\"selector\":\"/Project[1]/ItemGroup[1]/ProjectReference[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.28d8c690012900f2cc0ad1ef5d249e6edcd8ad8915c0ac92b98225b33c0705fd.8b0c4cbc61bd4df995ebd674ad6ca2a1043230b216928e04f04dac6900eb6bf4"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:59848416822842e293b3ff26c3cf9bf23263e64eeb14fe39ee6369beca133510",
+        "description": "Static source observation supporting the narrow declaration: Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{333DB882-6B91-4246-9CAF-76840A56A1CB}\",\"declared_path\":\"tests\\\\SyntheticIpm.IntegrationTests\\\\SyntheticIpm.IntegrationTests.csproj\",\"name\":\"SyntheticIpm.IntegrationTests\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c",
+        "location": {
+          "reference": "SyntheticIpm.sln#locations=[{\"column\":1,\"line\":20,\"selector\":\"Project(line=20)\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-sln-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "SyntheticIpm.sln",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.2960f6dbd09477b428251e4397df59517c7084b91fcd41aa359828a9d9ccf27f.62a8bff1892913313be47f155f9d54b9ed760f0ecb6e5d12f58211f0e38e114c"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:3da14e5a6ec7cd0ed0e707da035683b1764984e2cee42a24371fab554a0ccd48",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares a PackageReference with Include \"NUnit\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+        "location": {
+          "reference": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj#locations=[{\"column\":1,\"line\":5,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[2]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.2e859e95ad3366d9c44175754bbc948c544998543b8baaa8baf723d47cca5b06.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:43a0f2b500d5b9738aa9cd8c0913d1b47afd7b4d95708dbdc69cbc07d0128e03",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares a PackageReference with Include \"NUnit3TestAdapter\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+        "location": {
+          "reference": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj#locations=[{\"column\":1,\"line\":6,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[3]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.3ed3a288a68cb11d597003d83800199239efb90b45137dfd4b310ecca28ad4dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:43a0f2b500d5b9738aa9cd8c0913d1b47afd7b4d95708dbdc69cbc07d0128e03",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares PackageReference \"Microsoft.NET.Test.Sdk\" metadata \"Version\" with value \"17.13.0\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+        "location": {
+          "reference": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj#locations=[{\"column\":1,\"line\":4,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.5709f5838aa25feea9ae7f884400f9fe219cc7ef8db68d5b0d96af4b0de4e517.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:3da14e5a6ec7cd0ed0e707da035683b1764984e2cee42a24371fab554a0ccd48",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares PackageReference \"Microsoft.NET.Test.Sdk\" metadata \"Version\" with value \"17.13.0\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d",
+        "location": {
+          "reference": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj#locations=[{\"column\":1,\"line\":4,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.71e816578c56a1937cdcf15e07866ed50c907078027c302cea53ec7d4f4db6ce.f7d60584b2cfee96cefcdad8f1692e0406392a58ae88b44e60b35bca764f5f7d"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:8d654c44b7bebb6b31a9f2f606927f45b5072193adc4eef8cce3f3cf3b278df3",
+        "description": "Static source observation supporting the narrow declaration: Repository contains project file \"src/SyntheticIpm.Domain/SyntheticIpm.Domain.csproj\"; its filename label is \"SyntheticIpm.Domain\".",
+        "id": "evidence.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f",
+        "location": {
+          "reference": "src/SyntheticIpm.Domain/SyntheticIpm.Domain.csproj#locations=[{\"column\":1,\"line\":1,\"selector\":\"/Project[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "src/SyntheticIpm.Domain/SyntheticIpm.Domain.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.72fc4a27e7f31b196b3312b3a2a56e62cf007d9d2343f67f1cf05f6ac9ecc3b0.ab5dcf1770ab790efd29bbaabf8bfeb17229046f57c4964e687e5c6903ce8d0f"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:3da14e5a6ec7cd0ed0e707da035683b1764984e2cee42a24371fab554a0ccd48",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares a PackageReference with Include \"NUnit3TestAdapter\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb",
+        "location": {
+          "reference": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj#locations=[{\"column\":1,\"line\":6,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[3]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.7d0ecbc81a6ec86bf9bc92df6bd4c4080ae15390b63d78337b594f464707d0dd.85ae407d473271027c8ec695bb1526ae68462e1ed15194ad278ac6fadf16d0cb"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:3da14e5a6ec7cd0ed0e707da035683b1764984e2cee42a24371fab554a0ccd48",
+        "description": "Static source observation supporting the narrow declaration: Repository contains project file \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\"; its filename label is \"SyntheticIpm.IntegrationTests\".",
+        "id": "evidence.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9",
+        "location": {
+          "reference": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj#locations=[{\"column\":1,\"line\":1,\"selector\":\"/Project[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.7f61e0a84a14403f03bb4e82ed05df403f760c65a66369f7cd1f1b2a3bca9302.489579097bf2d0a076199e61a7d2a066c8a48fb753981dac6892519ac0ddfee9"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:3da14e5a6ec7cd0ed0e707da035683b1764984e2cee42a24371fab554a0ccd48",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares a PackageReference with Include \"Microsoft.NET.Test.Sdk\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+        "location": {
+          "reference": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj#locations=[{\"column\":1,\"line\":4,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.829f7215812f4b6363d62f256cc2777a37d18723c7b9dd98bf1657a7bda48423.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:ff0427d7213366b574202f3a74987aaa4a87dca3570b8862cecaaa2b870067b9",
+        "description": "Static source observation supporting the narrow declaration: Repository contains project file \"src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj\"; its filename label is \"SyntheticIpm.Infrastructure\".",
+        "id": "evidence.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4",
+        "location": {
+          "reference": "src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj#locations=[{\"column\":1,\"line\":1,\"selector\":\"/Project[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.8f2f8be7d8d051e3055588186033803c7b8bb0b38c14043d2c4c0b7d85f45c18.3e1a08cc23ddfd00d319e7668f53a6e7ca47a06ee5b913bd7614388f55bbf3c4"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:3da14e5a6ec7cd0ed0e707da035683b1764984e2cee42a24371fab554a0ccd48",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares PackageReference \"NUnit\" metadata \"Version\" with value \"4.5.1\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+        "location": {
+          "reference": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj#locations=[{\"column\":1,\"line\":5,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[2]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.9b1d978b293a21256492f4d4e8736967b58586c606309b94aebd6bacae22e6cd.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:43a0f2b500d5b9738aa9cd8c0913d1b47afd7b4d95708dbdc69cbc07d0128e03",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares PackageReference \"NUnit3TestAdapter\" metadata \"Version\" with value \"6.2.0\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+        "location": {
+          "reference": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj#locations=[{\"column\":1,\"line\":6,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[3]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.9bfee127f133029634a29265d08e92bcf475dfda1f278f7564bd902821769bea.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:59848416822842e293b3ff26c3cf9bf23263e64eeb14fe39ee6369beca133510",
+        "description": "Static source observation supporting the narrow declaration: Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{5751E520-961D-4769-AF60-D7BB815D412A}\",\"declared_path\":\"src\\\\SyntheticIpm.Domain\\\\SyntheticIpm.Domain.csproj\",\"name\":\"SyntheticIpm.Domain\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9",
+        "location": {
+          "reference": "SyntheticIpm.sln#locations=[{\"column\":1,\"line\":8,\"selector\":\"Project(line=8)\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-sln-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "SyntheticIpm.sln",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.a4ca923b68b79d1eca69fb0867dee93a56699355647f5165354aa2dab0588874.bd70dc99ddd457c8a3bcd585f39a6a764a9c632bfa35a0f36198b4052e5fa3e9"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:ff0427d7213366b574202f3a74987aaa4a87dca3570b8862cecaaa2b870067b9",
+        "description": "Static source observation supporting the narrow declaration: Project \"src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj\" declares a ProjectReference with Include \"../SyntheticIpm.Application/SyntheticIpm.Application.csproj\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8",
+        "location": {
+          "reference": "src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj#locations=[{\"column\":12,\"line\":2,\"selector\":\"/Project[1]/ItemGroup[1]/ProjectReference[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.a87854b4ee9163d57292c64f6fbb172903f6ca650b4e515210b3ecf074117820.650a2efdacdc6b64d3d3397b8852bd0ed76f0df21cbab2f5c2abe468f1f8baf8"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:43a0f2b500d5b9738aa9cd8c0913d1b47afd7b4d95708dbdc69cbc07d0128e03",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares a PackageReference with Include \"Microsoft.NET.Test.Sdk\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343",
+        "location": {
+          "reference": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj#locations=[{\"column\":1,\"line\":4,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.ace276f1152a976079421c94a1d4b25fde1aa587efa72e459656bf5adf837c1f.2cb1776592e0a9af82dee84d9c79e36864e07a70e79425718a11e2a62d230343"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:90fc6d89d18af565ede01d33d7e49b6bef83bf8f5f37ac4dd012fc83a93c1830",
+        "description": "Static source observation supporting the narrow declaration: Project \"src/SyntheticIpm.Application/SyntheticIpm.Application.csproj\" declares a ProjectReference with Include \"../SyntheticIpm.Domain/SyntheticIpm.Domain.csproj\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49",
+        "location": {
+          "reference": "src/SyntheticIpm.Application/SyntheticIpm.Application.csproj#locations=[{\"column\":12,\"line\":2,\"selector\":\"/Project[1]/ItemGroup[1]/ProjectReference[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "src/SyntheticIpm.Application/SyntheticIpm.Application.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.b9d58f35df7d5f0b019388ea2bdc40270e536d4f46157139d1391c0bcb5d2ab3.a4f108ffaf6b1acddd1880e8b75fe6b8da90109a24594b705d95b3185f189d49"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:d39e4e17b4d4e07a563aa63aab5744c527865c67b824da710b40d58e16ed89cf",
+        "description": "Static source observation supporting the narrow declaration: Project \"src/SyntheticIpm.Api/SyntheticIpm.Api.csproj\" declares a ProjectReference with Include \"../SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6",
+        "location": {
+          "reference": "src/SyntheticIpm.Api/SyntheticIpm.Api.csproj#locations=[{\"column\":12,\"line\":2,\"selector\":\"/Project[1]/ItemGroup[1]/ProjectReference[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "src/SyntheticIpm.Api/SyntheticIpm.Api.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.bd3bf616fc2a559c0b8f2c2cd257bf74aa77dad291c23dc4c2308872a903930a.cca338f26868df04d3bc184d15a26e7be7436bfedb2cb56a0eb23861824193a6"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:90fc6d89d18af565ede01d33d7e49b6bef83bf8f5f37ac4dd012fc83a93c1830",
+        "description": "Static source observation supporting the narrow declaration: Repository contains project file \"src/SyntheticIpm.Application/SyntheticIpm.Application.csproj\"; its filename label is \"SyntheticIpm.Application\".",
+        "id": "evidence.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18",
+        "location": {
+          "reference": "src/SyntheticIpm.Application/SyntheticIpm.Application.csproj#locations=[{\"column\":1,\"line\":1,\"selector\":\"/Project[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "src/SyntheticIpm.Application/SyntheticIpm.Application.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.c814305696c3902c639e89f3c5789e85c6d4696d9aaa29707c27bad14142d70c.d543afb5473688071be2de002246a0956824167ce3727f1e88d983c2ce615f18"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:43a0f2b500d5b9738aa9cd8c0913d1b47afd7b4d95708dbdc69cbc07d0128e03",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares PackageReference \"NUnit\" metadata \"Version\" with value \"4.5.1\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56",
+        "location": {
+          "reference": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj#locations=[{\"column\":1,\"line\":5,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[2]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.c93a3c1cb524f8e3a0b2892707513b9c8a38deaad0bb0b08ba029f0bbab068d4.4a7361e347bae2330e736cca6123171d8f0ce3f79e053ffb31bb8b307f213a56"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:59848416822842e293b3ff26c3cf9bf23263e64eeb14fe39ee6369beca133510",
+        "description": "Static source observation supporting the narrow declaration: Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{D3F8FDDC-3BF4-48BF-A351-AA0AF066D302}\",\"declared_path\":\"src\\\\SyntheticIpm.Infrastructure\\\\SyntheticIpm.Infrastructure.csproj\",\"name\":\"SyntheticIpm.Infrastructure\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6",
+        "location": {
+          "reference": "SyntheticIpm.sln#locations=[{\"column\":1,\"line\":12,\"selector\":\"Project(line=12)\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-sln-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "SyntheticIpm.sln",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.c9cf561b67dab22912c04c095c3974a27d56f9ee8743b83643280a5da121f224.fee12c759f09dd57441d1b43864ffeedf24c4adc6000cff29bcb479f840a78c6"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:3da14e5a6ec7cd0ed0e707da035683b1764984e2cee42a24371fab554a0ccd48",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares a ProjectReference with Include \"../../src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c",
+        "location": {
+          "reference": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj#locations=[{\"column\":1,\"line\":7,\"selector\":\"/Project[1]/ItemGroup[1]/ProjectReference[1]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.d0016a6baf5233f2cc8cc05f7a76fb449cff354c311637b56a2212124e008027.adabbafe72fddd1cacdd087c3e7a91439bd38bbc8ac3eb3e63d8c24842b6942c"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:59848416822842e293b3ff26c3cf9bf23263e64eeb14fe39ee6369beca133510",
+        "description": "Static source observation supporting the narrow declaration: Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{DDB26F01-3178-49ED-B45E-328CDEE4E335}\",\"declared_path\":\"src\\\\SyntheticIpm.Api\\\\SyntheticIpm.Api.csproj\",\"name\":\"SyntheticIpm.Api\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5",
+        "location": {
+          "reference": "SyntheticIpm.sln#locations=[{\"column\":1,\"line\":14,\"selector\":\"Project(line=14)\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-sln-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "SyntheticIpm.sln",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.deb1e87d7c878419cf557568a5dae508567ef35e6e4018fe06db16aee9d7f28b.3cb911f445a8d7d0a20e4302cb3f5895170c6364e5a80312e89537ebd9d5e1b5"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:43a0f2b500d5b9738aa9cd8c0913d1b47afd7b4d95708dbdc69cbc07d0128e03",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj\" declares a PackageReference with Include \"NUnit\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6",
+        "location": {
+          "reference": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj#locations=[{\"column\":1,\"line\":5,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[2]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.e5155cf25fb535d82208663d0e58c755560425ce042fe92937eac500d974a9b5.0dd345a4c3d0c7a1c30a08b25d364da3bf915b5e955b0a1fe5f76c000a5840e6"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:59848416822842e293b3ff26c3cf9bf23263e64eeb14fe39ee6369beca133510",
+        "description": "Static source observation supporting the narrow declaration: Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{C00E3082-B4A6-4E6E-B2DD-2D68BCF07691}\",\"declared_path\":\"tests\\\\SyntheticIpm.UnitTests\\\\SyntheticIpm.UnitTests.csproj\",\"name\":\"SyntheticIpm.UnitTests\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6",
+        "location": {
+          "reference": "SyntheticIpm.sln#locations=[{\"column\":1,\"line\":18,\"selector\":\"Project(line=18)\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-sln-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "SyntheticIpm.sln",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.e9e31a463f78e91c62bd168a842786bc6e893e84d544141d70d806559d42b41c.439e01c5e1fd5de26556f412f95e42313e841cee7711833eb20b133b242fdbb6"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:59848416822842e293b3ff26c3cf9bf23263e64eeb14fe39ee6369beca133510",
+        "description": "Static source observation supporting the narrow declaration: Solution \"SyntheticIpm.sln\" declares project membership {\"declared_id\":\"{A9086FF1-590D-4AEF-821F-0F6F2288880B}\",\"declared_path\":\"src\\\\SyntheticIpm.Application\\\\SyntheticIpm.Application.csproj\",\"name\":\"SyntheticIpm.Application\",\"project_type_id\":\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\"}. Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c",
+        "location": {
+          "reference": "SyntheticIpm.sln#locations=[{\"column\":1,\"line\":10,\"selector\":\"Project(line=10)\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-sln-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "SyntheticIpm.sln",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.eba99a076862945ffde7e6b559b61aa8676eeec92eb54da0dcd75454f06a1f7a.af25b4af85c7efb6bf513d0e990802756d93ac565b84bd37bba71877d759388c"
+        ],
+        "type": "direct-technical"
+      },
+      {
+        "captured_at": "2026-10-18T23:28:15.759723Z",
+        "content_hash": "sha256:3da14e5a6ec7cd0ed0e707da035683b1764984e2cee42a24371fab554a0ccd48",
+        "description": "Static source observation supporting the narrow declaration: Project \"tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj\" declares PackageReference \"NUnit3TestAdapter\" metadata \"Version\" with value \"6.2.0\". Conditions (not evaluated): [].",
+        "id": "evidence.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e",
+        "location": {
+          "reference": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj#locations=[{\"column\":1,\"line\":6,\"selector\":\"/Project[1]/ItemGroup[1]/PackageReference[3]\"}]"
+        },
+        "provenance": {
+          "actor": "dotnet-metadata-extractor",
+          "method": "static-xml-declaration-v1; static-dotnet-normalization-v1; live source observation"
+        },
+        "source": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj",
+        "status": "active",
+        "substantiates": [
+          "claim.dotnet.f48bf209e434ca0961e4a752a7d5143e77084982dc00b060c9bbfd4033df0e19.c59722cce8b43865e47aac92a1922574d1653bf3453306f1ad38c9c3a063370e"
+        ],
+        "type": "direct-technical"
+      }
+    ],
+    "relationships": []
+  },
+  "repository_binding": "sha256:af43af2f5290ab0c36744d74c21dde4119d7de87730c73d472045b038ceccba6",
+  "sources": {
+    "exclusions": [
+      "*.g.cs",
+      "*.g.i.cs",
+      "*.generated.*",
+      "*.key",
+      "*.p12",
+      "*.pem",
+      "*.pfx",
+      ".ai",
+      ".aws",
+      ".azure",
+      ".cache",
+      ".env",
+      ".env.*",
+      ".git",
+      ".hg",
+      ".idea",
+      ".local",
+      ".mypy_cache",
+      ".nuget",
+      ".pytest_cache",
+      ".secrets",
+      ".ssh",
+      ".svn",
+      ".venv",
+      ".vs",
+      ".vscode",
+      "TestResults",
+      "__pycache__",
+      "bin",
+      "build",
+      "coverage",
+      "dist",
+      "generated",
+      "node_modules",
+      "obj",
+      "out",
+      "packages",
+      "secrets",
+      "target",
+      "venv"
+    ],
+    "extraction_fingerprint": "sha256:72476fb7fa23a58d44ca3bf5a6d78c238c660d4f4b190b9bffe00071647077c3",
+    "files": [
+      {
+        "hash": "sha256:59848416822842e293b3ff26c3cf9bf23263e64eeb14fe39ee6369beca133510",
+        "path": "SyntheticIpm.sln"
+      },
+      {
+        "hash": "sha256:d39e4e17b4d4e07a563aa63aab5744c527865c67b824da710b40d58e16ed89cf",
+        "path": "src/SyntheticIpm.Api/SyntheticIpm.Api.csproj"
+      },
+      {
+        "hash": "sha256:90fc6d89d18af565ede01d33d7e49b6bef83bf8f5f37ac4dd012fc83a93c1830",
+        "path": "src/SyntheticIpm.Application/SyntheticIpm.Application.csproj"
+      },
+      {
+        "hash": "sha256:8d654c44b7bebb6b31a9f2f606927f45b5072193adc4eef8cce3f3cf3b278df3",
+        "path": "src/SyntheticIpm.Domain/SyntheticIpm.Domain.csproj"
+      },
+      {
+        "hash": "sha256:ff0427d7213366b574202f3a74987aaa4a87dca3570b8862cecaaa2b870067b9",
+        "path": "src/SyntheticIpm.Infrastructure/SyntheticIpm.Infrastructure.csproj"
+      },
+      {
+        "hash": "sha256:3da14e5a6ec7cd0ed0e707da035683b1764984e2cee42a24371fab554a0ccd48",
+        "path": "tests/SyntheticIpm.IntegrationTests/SyntheticIpm.IntegrationTests.csproj"
+      },
+      {
+        "hash": "sha256:43a0f2b500d5b9738aa9cd8c0913d1b47afd7b4d95708dbdc69cbc07d0128e03",
+        "path": "tests/SyntheticIpm.UnitTests/SyntheticIpm.UnitTests.csproj"
+      }
+    ],
+    "fingerprint": "sha256:bdef89d9e41c8c425cede8355fac6f04acfc65117eea411242d8b2d165dc1164",
+    "inventory_fingerprint": "sha256:1027690f854972bcd307cb1b6576763d2ac40d66a0bcf31bc8e6be6283bdea2c"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "baseline_commit": "3bf136ca434e75148744e76338ea3b3597f6ec6f",
+  "baseline_python_tests": {
+    "failed": 0,
+    "passed": 106
+  },
+  "canonical_schema_and_source_metadata_files_sha256_unchanged": 10,
+  "checks": [
+    {
+      "command": "python -B .ai/tools/kb.py validate --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py check-scaffold --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py version --json",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "core_validator_function_byte_for_byte_unchanged": true,
+  "host_dotnet_tests": {
+    "command": "/workspace/.ipm-tools/dotnet/dotnet vstest tests/SyntheticIpm.UnitTests/bin/Debug/net10.0/SyntheticIpm.UnitTests.dll tests/SyntheticIpm.IntegrationTests/bin/Debug/net10.0/SyntheticIpm.IntegrationTests.dll --ResultsDirectory:/tmp/ipm-increment-d-tests",
+    "failed": 0,
+    "passed": 27,
+    "phase": "preflight, existing assemblies without restore/build",
+    "skipped": 0
+  },
+  "host_files_sha256_unchanged": 1148,
+  "increment": "Stage 2 D only",
+  "increment_a_b_c_modules_and_tests_unchanged": true,
+  "increment_e_started": false,
+  "multi_file_atomicity_claimed": false,
+  "native_windows_tests": "Not executed; Linux local filesystem tested",
+  "prepared_real_plan_additions": 58,
+  "prepared_real_plan_fingerprint": "sha256:46957d9d2a5d175d9b9156865f6622da8eeb27c535f7de07da6573ea9e9581c9",
+  "python_tests": {
+    "command": "python -B -m unittest discover -s .ai/tools/tests -p 'test_*.py'",
+    "errors": 0,
+    "failed": 0,
+    "modules": {
+      "test_acceptance": 28,
+      "test_extract": 28,
+      "test_normalize": 35,
+      "test_population": 53,
+      "test_scan": 15
+    },
+    "passed": 159,
+    "skipped": 0
+  },
+  "real_repository_apply_performed": false,
+  "synthetic_demo": {
+    "approved_apply_writes": 8,
+    "idempotent_retry_writes": 0,
+    "interruption_exit_code": 71,
+    "recovery_state": "ROLLED_BACK",
+    "resulting_validation_ok": true
+  }
+}
