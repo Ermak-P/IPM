@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "statement",
+    "type",
+    "status",
+    "evidence",
+    "provenance",
+    "last_verified",
+    "depends_on",
+    "conflicts_with"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9._:-]*$"
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "type": {
+      "enum": [
+        "business_rule",
+        "architecture",
+        "technical_fact"
+      ]
+    },
+    "status": {
+      "enum": [
+        "CONFIRMED",
+        "INFERRED",
+        "UNKNOWN",
+        "NEEDS_HUMAN_CONFIRMATION"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9._:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "actor",
+        "method"
+      ],
+      "properties": {
+        "actor": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "additionalProperties": false
+    },
+    "last_verified": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "depends_on": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9._:-]*$"
+      },
+      "uniqueItems": true
+    },
+    "conflicts_with": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9._:-]*$"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

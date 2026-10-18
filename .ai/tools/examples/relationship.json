@@ -1,0 +1,10 @@
+{
+  "id": "example.relationship",
+  "type": "depends_on",
+  "from": "example.claim",
+  "to": "example.basis",
+  "provenance": {
+    "actor": "example-author",
+    "method": "manual illustration"
+  }
+}

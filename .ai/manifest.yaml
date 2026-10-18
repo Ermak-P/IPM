@@ -1,0 +1,20 @@
+{
+  "format": "universal-architecture-kb",
+  "format_version": "1.0.0",
+  "schema_versions": {
+    "claim": "1.0.0",
+    "evidence": "1.0.0",
+    "relationship": "1.0.0"
+  },
+  "capabilities": [
+    "init",
+    "validate",
+    "check-scaffold",
+    "version"
+  ],
+  "storage": {
+    "manifest": "JSON-compatible YAML 1.2",
+    "records": "UTF-8 JSON, one object per file",
+    "documentation": "Markdown"
+  }
+}

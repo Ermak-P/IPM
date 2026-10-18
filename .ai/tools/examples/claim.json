@@ -1,0 +1,16 @@
+{
+  "id": "example.claim",
+  "statement": "This synthetic record demonstrates an unverified claim.",
+  "type": "technical_fact",
+  "status": "UNKNOWN",
+  "evidence": [
+    "example.evidence"
+  ],
+  "provenance": {
+    "actor": "example-author",
+    "method": "manual illustration"
+  },
+  "last_verified": null,
+  "depends_on": ["example.basis"],
+  "conflicts_with": []
+}

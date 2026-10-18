@@ -1,0 +1,30 @@
+{
+  "verified_on": "2026-10-19",
+  "timezone": "Europe/Moscow",
+  "python_version": "3.12.14",
+  "baseline_commit": "320e34d7345a5fed7df636f4e625ced3aed4b2c0",
+  "checks": [
+    {"command": "python -B .ai/tools/tests/test_acceptance.py", "exit_code": 0, "tests_passed": 28},
+    {"command": "python -B .ai/tools/kb.py validate --json", "exit_code": 0},
+    {"command": "python -B .ai/tools/kb.py check-scaffold --json", "exit_code": 0},
+    {"command": "python -B .ai/tools/kb.py version --json", "exit_code": 0},
+    {"command": "git diff --check", "exit_code": 0},
+    {"command": "git diff --exit-code", "exit_code": 0},
+    {"command": "git ls-files -m -d", "exit_code": 0, "output": ""},
+    {"command": "git status --short", "exit_code": 0, "output": "?? .ai/"}
+  ],
+  "acceptance_test_mapping": {
+    "1-20": "test_01 through test_20 correspond to Contract v1.0 acceptance cases 1-20",
+    "21-28": "Additional checks: structure/dates/enums, schema mutation, dependency cycles, explicit evidence binding, malformed relationships, edited scaffold preservation, installed CLI portability, duplicate JSON keys"
+  },
+  "runtime_path": "C:/Users/EPMAKOB/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+  "execution": "Offline, using the bundled Python interpreter; no packages installed",
+  "host_files": "No tracked host files modified or deleted; all additions are under .ai/",
+  "review": "Reviewed schemas, CLI, documentation and tests for contract compliance, input validation, installation boundaries and reproducibility",
+  "limitations": [
+    "Validation checks the pinned v1 JSON Schema profile and explicit invariants; it does not establish semantic truth, source authority or freshness",
+    "The CLI does not protect against concurrent hostile filesystem mutation during initialization",
+    "Host build/tests were not rerun because no host application, build, dependency or test files changed",
+    "Stage 2 is not implemented and awaits Stage 1 acceptance"
+  ]
+}

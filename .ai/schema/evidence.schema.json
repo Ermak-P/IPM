@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "status",
+    "source",
+    "provenance",
+    "captured_at",
+    "description",
+    "substantiates"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9._:-]*$"
+    },
+    "type": {
+      "enum": [
+        "direct-authoritative",
+        "direct-technical",
+        "supporting",
+        "derived"
+      ]
+    },
+    "status": {
+      "enum": [
+        "active",
+        "retracted",
+        "superseded"
+      ]
+    },
+    "source": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        {
+          "type": "object",
+          "required": [
+            "reference"
+          ],
+          "properties": {
+            "reference": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "actor",
+        "method"
+      ],
+      "properties": {
+        "actor": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "additionalProperties": false
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "location": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        {
+          "type": "object",
+          "required": [
+            "reference"
+          ],
+          "properties": {
+            "reference": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "substantiates": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9._:-]*$"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

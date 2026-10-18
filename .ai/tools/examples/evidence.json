@@ -1,0 +1,16 @@
+{
+  "id": "example.evidence",
+  "type": "supporting",
+  "status": "active",
+  "source": "synthetic example",
+  "provenance": {
+    "actor": "example-author",
+    "method": "manual illustration"
+  },
+  "captured_at": "2026-10-19T00:00:00Z",
+  "location": "example section",
+  "description": "Illustrates the format; proves nothing about the host.",
+  "substantiates": [
+    "example.claim"
+  ]
+}

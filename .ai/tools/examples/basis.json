@@ -1,0 +1,11 @@
+{
+  "id": "example.basis",
+  "statement": "This is the synthetic dependency used by the relationship example.",
+  "type": "technical_fact",
+  "status": "UNKNOWN",
+  "evidence": [],
+  "provenance": {"actor": "example-author", "method": "manual illustration"},
+  "last_verified": null,
+  "depends_on": [],
+  "conflicts_with": []
+}
