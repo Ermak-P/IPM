@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<ItemGroup><ProjectReference Include="../SyntheticIpm.Domain/SyntheticIpm.Domain.csproj" /></ItemGroup>
+</Project>

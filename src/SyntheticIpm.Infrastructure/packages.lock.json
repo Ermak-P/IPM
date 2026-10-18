@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "syntheticipm.application": {
+        "type": "Project",
+        "dependencies": {
+          "SyntheticIpm.Domain": "[1.0.0, )"
+        }
+      },
+      "syntheticipm.domain": {
+        "type": "Project"
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<ItemGroup><ProjectReference Include="../SyntheticIpm.Application/SyntheticIpm.Application.csproj" /><FrameworkReference Include="Microsoft.AspNetCore.App" /></ItemGroup>
+</Project>
