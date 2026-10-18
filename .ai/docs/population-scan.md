@@ -1,7 +1,8 @@
 # Stage 2, Increment A: discovery
 
-Only discovery is implemented. Extraction, candidate normalization, approval,
-population, graph building and the final report command remain future increments.
+Increment A implements discovery. Increment B adds the separate
+[declared .NET extractor](population-extract.md). Candidate normalization,
+approval, population, graph building and the final report command remain future increments.
 No Graph Builder exists in Stage 1; none is introduced or replaced here.
 
 From the repository root (Python 3.12+, standard library only):
@@ -18,8 +19,8 @@ python -B .ai/tools/kb.py check-scaffold --json
 
 The Scanner protocol in tools/population_scan.py is the separate discovery
 boundary: scan(root, exclusions) returns an inventory dictionary. It does not
-produce canonical records or parse/evaluate projects. Language analyzers will
-consume the inventory in a later increment. Candidate/evidence contracts are
+produce canonical records or parse/evaluate projects. The .NET analyzer
+consumes this inventory in Increment B. Candidate/evidence contracts are
 unchanged; no alternative knowledge registry or schema is introduced.
 
 The report_version 1.0 inventory has command, ok, sources, skipped, errors,

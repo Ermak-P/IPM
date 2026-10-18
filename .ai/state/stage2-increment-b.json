@@ -1,0 +1,48 @@
+{
+  "canonical_and_schema_files_sha256_unchanged": 9,
+  "checks": [
+    {
+      "command": "python -B .ai/tools/kb.py validate --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py check-scaffold --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py version --json",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "extraction_counts": {
+    "candidates": 29,
+    "diagnostics": 15
+  },
+  "extraction_errors": 0,
+  "extraction_stdout_identical_on_repeat": true,
+  "host_dotnet_tests": {
+    "command": "/workspace/.ipm-tools/dotnet/dotnet vstest tests/SyntheticIpm.UnitTests/bin/Debug/net10.0/SyntheticIpm.UnitTests.dll tests/SyntheticIpm.IntegrationTests/bin/Debug/net10.0/SyntheticIpm.IntegrationTests.dll --ResultsDirectory:/tmp/ipm-increment-b-test-results",
+    "failed": 0,
+    "note": "Existing built assemblies; no restore or build performed. CLI home and test results outside host checkout.",
+    "passed": 27,
+    "skipped": 0
+  },
+  "host_files_sha256_unchanged": 1148,
+  "increment": "Stage 2 B only",
+  "increment_c_started": false,
+  "native_windows_execution": "Not available; Windows-style path tests passed on Linux. FIFO test guarded and symlink tests skip where unavailable.",
+  "python_tests": {
+    "errors": 0,
+    "failed": 0,
+    "increment_a": 15,
+    "increment_b": 28,
+    "skipped": 0,
+    "stage1": 28,
+    "total": 71
+  },
+  "scan_report_unchanged_from_increment_a": true
+}

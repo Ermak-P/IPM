@@ -41,6 +41,12 @@ class ScanTests(unittest.TestCase):
         return {p.relative_to(self.root).as_posix(): p.read_bytes()
                 for p in self.root.rglob('*') if p.is_file() and not p.is_symlink()}
 
+    def link(self, path, target, directory=False):
+        try:
+            path.symlink_to(target, target_is_directory=directory)
+        except (OSError, NotImplementedError):
+            self.skipTest('symbolic link creation unavailable or not permitted')
+
     def test_single_project(self):
         self.write('App.sln')
         self.write('src/App.csproj')
@@ -90,16 +96,17 @@ class ScanTests(unittest.TestCase):
             external = Path(outside)
             (external / 'Secret.csproj').write_text('DO_NOT_READ')
             self.write('real/Inside.csproj')
-            (self.root / 'escape').symlink_to(external, target_is_directory=True)
-            (self.root / 'internal').symlink_to(self.root / 'real', target_is_directory=True)
-            (self.root / 'loop').symlink_to(self.root, target_is_directory=True)
-            (self.root / 'broken.csproj').symlink_to(external / 'missing')
-            (self.root / 'linked.csproj').symlink_to(external / 'Secret.csproj')
+            self.link(self.root / 'escape', external, True)
+            self.link(self.root / 'internal', self.root / 'real', True)
+            self.link(self.root / 'loop', self.root, True)
+            self.link(self.root / 'broken.csproj', external / 'missing')
+            self.link(self.root / 'linked.csproj', external / 'Secret.csproj')
             result = self.scan()
             self.assertEqual([r['path'] for r in result['sources']], ['real/Inside.csproj'])
             self.assertEqual(len(result['skipped']), 5)
             self.assertTrue(all(r['reason'] == 'link-not-followed' for r in result['skipped']))
 
+    @unittest.skipUnless(hasattr(os, 'mkfifo'), 'named pipes require os.mkfifo (Unix)')
     def test_special_files(self):
         os.mkfifo(self.root / 'pipe.csproj')
         self.assertEqual(self.scan()['skipped'], [
@@ -168,7 +175,7 @@ class ScanTests(unittest.TestCase):
         path = self.write('file')
         self.assertFalse(self.scanner.scan(path)['ok'])
         link = self.root / 'rootlink'
-        link.symlink_to(self.root, target_is_directory=True)
+        self.link(link, self.root, True)
         self.assertFalse(self.scanner.scan(link)['ok'])
 
     def test_cli_and_installed_portability(self):

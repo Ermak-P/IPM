@@ -52,5 +52,10 @@ not supported by this dependency-free v1 CLI.
 Stage 2 Increment A adds read-only discovery through
 `python -B .ai/tools/kb.py scan --json`. See
 [discovery usage and boundaries](docs/population-scan.md).
-Stack analyzers, graph construction, RAG, integrations and automatic knowledge
-population are not implemented. Canonical contracts remain v1.0.
+Increment B adds declared .NET metadata extraction through
+`python -B .ai/tools/kb.py extract --json`; see
+[extraction usage and limitations](docs/population-extract.md).
+The manifest lists pinned core capabilities; scan/extract are optional CLI
+extensions listed by --help, without a canonical format version change.
+Graph construction, RAG, integrations and automatic knowledge population are
+not implemented. Canonical contracts remain v1.0.
