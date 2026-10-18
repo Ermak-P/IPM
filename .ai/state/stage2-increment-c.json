@@ -1,0 +1,61 @@
+{
+  "all_three_structural_validation_views_passed": true,
+  "baseline_commit": "035d90c523537d0616f52c24586aaa47b2cfdd64",
+  "baseline_python_tests_passed": 71,
+  "canonical_and_schema_files_sha256_unchanged": 9,
+  "checks": [
+    {
+      "command": "python -B .ai/tools/kb.py validate --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py check-scaffold --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py version --json",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "complete_change_set_deterministic_across_live_runs": true,
+  "existing_validator_function_byte_for_byte_unchanged": true,
+  "host_files_sha256_unchanged": 1148,
+  "host_tests": {
+    "command": "/workspace/.ipm-tools/dotnet/dotnet vstest tests/SyntheticIpm.UnitTests/bin/Debug/net10.0/SyntheticIpm.UnitTests.dll tests/SyntheticIpm.IntegrationTests/bin/Debug/net10.0/SyntheticIpm.IntegrationTests.dll --ResultsDirectory:/tmp/ipm-increment-c-tests",
+    "failed": 0,
+    "passed": 27,
+    "phase": "Preflight; existing assemblies via dotnet vstest, no restore/build",
+    "skipped": 0
+  },
+  "increment": "Stage 2 C only",
+  "increment_a_scan_output_unchanged": true,
+  "increment_b_extraction_output_unchanged": true,
+  "increment_d_started": false,
+  "native_windows_tests": "Not run; this runtime is Linux",
+  "proposal_classifications": {
+    "add": 58
+  },
+  "proposal_counts": {
+    "claims": 29,
+    "evidence": 29,
+    "relationships": 0
+  },
+  "python_test_modules": {
+    "test_acceptance": 28,
+    "test_extract": 28,
+    "test_normalize": 35,
+    "test_scan": 15
+  },
+  "python_tests": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 106,
+    "skipped": 0
+  },
+  "record_identities_deterministic_across_live_runs": true,
+  "timestamp_policy": "Actual UTC after source re-observation; no timestamps in IDs/change_set, no last_verified assigned"
+}

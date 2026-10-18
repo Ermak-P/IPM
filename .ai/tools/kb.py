@@ -26,6 +26,7 @@ FILES = ['README.md', 'manifest.yaml', 'schema/claim.schema.json', 'schema/evide
          'tools/examples/basis.json']
 FILES += ['tools/population_scan.py', 'tools/tests/test_scan.py', 'docs/population-scan.md']
 FILES += ['tools/population_dotnet.py', 'tools/tests/test_extract.py', 'docs/population-extract.md']
+FILES += ['tools/population_normalize.py', 'tools/tests/test_normalize.py', 'docs/population-normalize.md']
 PLACEHOLDERS = [directory + '/.gitkeep' for directory in DIRECTORIES
                 if directory not in ['schema', 'docs', 'tools', 'tools/tests', 'tools/examples']]
 SOURCE = Path(__file__).resolve().parents[1]
@@ -280,29 +281,34 @@ def validate(base):
 
 def main():
     parser = argparse.ArgumentParser(description='Offline universal architecture knowledge base v1')
-    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract'])
+    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract', 'normalize'])
     parser.add_argument('--root', type=Path, default=Path.cwd(), help='existing host repository directory')
     parser.add_argument('--json', action='store_true', help='machine-readable deterministic output')
     parser.add_argument('--exclude', action='append', default=[],
-                        help='scan/extract: additional repository-relative glob or component name (repeatable)')
+                        help='scan/extract/normalize: additional repository-relative glob or component name (repeatable)')
     args = parser.parse_args()
-    if args.command in ['scan', 'extract']:
+    if args.command in ['scan', 'extract', 'normalize']:
         from population_scan import RepositoryScanner
         result = RepositoryScanner().scan(args.root, args.exclude)
-        if args.command == 'extract':
+        if args.command in ['extract', 'normalize']:
             from population_dotnet import DotNetAnalyzer
             result = DotNetAnalyzer().extract(args.root, result)
+        if args.command == 'normalize':
+            from population_normalize import CandidateNormalizer
+            result = CandidateNormalizer().normalize(args.root, result)
         if args.json:
             print(json.dumps(result, sort_keys=True))
         else:
             if args.command == 'scan':
                 print('Scan: {sources} sources, {skipped} skipped, {errors} errors'.format(**result['counts']))
-            else:
+            elif args.command == 'extract':
                 print('Extract: {candidates} candidates, {diagnostics} diagnostics'.format(**result['counts']))
+            else:
+                print('Normalize: {claims} claims, {evidence} evidence, {relationships} relationships'.format(**result['counts']))
             print(json.dumps(result, indent=2, sort_keys=True))
         return 0 if result['ok'] else 1
     if args.exclude:
-        parser.error('--exclude is supported only for scan/extract')
+        parser.error('--exclude is supported only for scan/extract/normalize')
     errors, warnings = [], []
     try:
         if args.command != 'version':

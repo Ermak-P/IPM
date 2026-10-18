@@ -6,7 +6,7 @@ Unknown, missing or incompatible manifest fields/versions fail explicitly.
 
 The manifest capabilities list is the pinned Contract v1.0 core capability set
 (init, validate, check-scaffold, version), not an exhaustive CLI command registry.
-Optional population-layer extensions (scan and extract) are documented separately
+Optional population-layer extensions (scan, extract and normalize) are documented separately
 and listed by CLI --help. They do not change the core manifest, canonical schemas
 or format version. init includes the extension modules and tests for portability.
 

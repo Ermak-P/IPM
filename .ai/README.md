@@ -55,7 +55,10 @@ Stage 2 Increment A adds read-only discovery through
 Increment B adds declared .NET metadata extraction through
 `python -B .ai/tools/kb.py extract --json`; see
 [extraction usage and limitations](docs/population-extract.md).
-The manifest lists pinned core capabilities; scan/extract are optional CLI
+Increment C adds read-only v1 proposals and isolated validation through
+`python -B .ai/tools/kb.py normalize --json`; see
+[normalization, time policy and review limitations](docs/population-normalize.md).
+The manifest lists pinned core capabilities; scan/extract/normalize are optional CLI
 extensions listed by --help, without a canonical format version change.
 Graph construction, RAG, integrations and automatic knowledge population are
 not implemented. Canonical contracts remain v1.0.

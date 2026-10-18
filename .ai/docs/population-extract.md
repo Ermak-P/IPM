@@ -74,9 +74,9 @@ diagnostics, limitations and the original scan report. A candidate contains:
 
 Candidates intentionally have no canonical claim status, evidence status,
 captured_at or last_verified. An extraction is not a confirmation event.
-Canonical normalization and contract validation belong to Increment C, which
-is not implemented here; future normalization must use Contract v1.0 rather
-than treating this transport output as validated canonical records.
+Canonical normalization and contract validation are provided by the separate
+[Increment C normalizer](population-normalize.md). Extraction output alone is
+not a validated canonical record.
 
 Equivalent declarations have stable IDs across traversal order, metadata
 formatting, line shifts, and XML attribute order. Only surrounding metadata
@@ -130,5 +130,6 @@ guarded by os.mkfifo availability. Symlink tests skip explicitly when the OS or
 user cannot create links. Native Windows execution must be reported separately
 from these portable tests.
 
-No populate, approval, canonical normalization, graph builder or final report
-command is added. Increment C must wait for review and acceptance of B.
+The extract command adds no populate, approval, canonical writes, graph builder
+or final report command. Increment C normalization is a separate read-only step;
+application remains outside A/B/C.

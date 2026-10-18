@@ -1,8 +1,9 @@
 # Stage 2, Increment A: discovery
 
 Increment A implements discovery. Increment B adds the separate
-[declared .NET extractor](population-extract.md). Candidate normalization,
-approval, population, graph building and the final report command remain future increments.
+[declared .NET extractor](population-extract.md). Increment C adds
+[read-only normalization](population-normalize.md). Approval, population,
+graph building and the final report command remain future increments.
 No Graph Builder exists in Stage 1; none is introduced or replaced here.
 
 From the repository root (Python 3.12+, standard library only):
