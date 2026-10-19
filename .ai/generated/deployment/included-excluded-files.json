@@ -1,0 +1,879 @@
+{
+  "archive_sha256": "7df3021aefa51a2e9e673d2f2a9802a2373892cbfd639c93d207c152e8708cda",
+  "categories": [
+    "reusable-framework-code-and-contracts",
+    "required-scaffold-files",
+    "framework-tests-and-documentation",
+    "synthetic-sample-data",
+    "generated-artifacts",
+    "runtime-state-plans-and-journals"
+  ],
+  "format": "clean-deployment-inventory",
+  "inventory": [
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": null,
+      "included_as": ".ai/.gitignore",
+      "original_preserved": true,
+      "path": ".ai/.gitignore",
+      "source_sha256": "2f0b982d587c0fc21ef07e490659946b4ae421ca8ca63ab6baf9aa856dd9783a"
+    },
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/README.md"
+    },
+    {
+      "archive_transformation": "clean runtime README",
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/README.md",
+      "original_preserved": true,
+      "path": ".ai/deployment/README.clean.md",
+      "source_sha256": "f2d014857cdf474f6b333916922bdf9c2d4c74dac0713194985be7f2ded44539"
+    },
+    {
+      "archive_transformation": "omit development observation sections",
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/clean-deployment.md",
+      "original_preserved": true,
+      "path": ".ai/docs/clean-deployment.md",
+      "source_sha256": "9af4d1c627e7609e0329fd924ee384275a91a0775b49f2230185548b77faa70d"
+    },
+    {
+      "archive_transformation": "omit development observation sections",
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/compatibility-adapter.md",
+      "original_preserved": true,
+      "path": ".ai/docs/compatibility-adapter.md",
+      "source_sha256": "c0aa7f347a1fcde3ab044a82ec9ff2d7c4081f70999708144117949d20b25a34"
+    },
+    {
+      "archive_transformation": "omit development observation sections",
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/compatibility-inspector.md",
+      "original_preserved": true,
+      "path": ".ai/docs/compatibility-inspector.md",
+      "source_sha256": "83bbc63fb3857faae9753f61e42ae22b406fb1609238b5210482c948693fb5fc"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/contract-v1.md",
+      "original_preserved": true,
+      "path": ".ai/docs/contract-v1.md",
+      "source_sha256": "e9b88bb51bc5bcf55d08e6497debdd7705d2a7a9be83b71372db13d6f9343b76"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/evidence-and-confidence.md",
+      "original_preserved": true,
+      "path": ".ai/docs/evidence-and-confidence.md",
+      "source_sha256": "5454870a1320c5cd1bee85167b167eeb0e8eb140db1821cd40297dbf6c3d7258"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/docs/existing-knowledge-compatibility.md"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/graphs-and-reports.md",
+      "original_preserved": true,
+      "path": ".ai/docs/graphs-and-reports.md",
+      "source_sha256": "c6853077f7b797ea6142eac7d549b4e6e6a293faae9ed25179cb9d3e31ed0f6b"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/knowledge-lifecycle.md",
+      "original_preserved": true,
+      "path": ".ai/docs/knowledge-lifecycle.md",
+      "source_sha256": "28f74864aa5d486d38cac803e8310727550f8353440d0a97741d7de09f8ea818"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/population-apply.md",
+      "original_preserved": true,
+      "path": ".ai/docs/population-apply.md",
+      "source_sha256": "88f9a9dde01b3f636cdfb6229dc5b7ce3d9302d7a07306db5ceba1ddc5278f26"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/population-extract.md",
+      "original_preserved": true,
+      "path": ".ai/docs/population-extract.md",
+      "source_sha256": "4e854016f28c186d168b471128d57da6bf73e33703ef4e4a0a56debe2f99ea2e"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/population-normalize.md",
+      "original_preserved": true,
+      "path": ".ai/docs/population-normalize.md",
+      "source_sha256": "7b35985479869f7c7e836890c34b83e484fc8a830d605880edf604c6b5b995a8"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/population-scan.md",
+      "original_preserved": true,
+      "path": ".ai/docs/population-scan.md",
+      "source_sha256": "4853b0ca2cf3216f809e38c95702b5d03bb465b4cc943a3b2e3518d20df70207"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/schema-versioning.md",
+      "original_preserved": true,
+      "path": ".ai/docs/schema-versioning.md",
+      "source_sha256": "3b865bb1328a004dc680bb93401cee226e018d207d007b6f66052407a0b1039e"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/docs/stage2-acceptance.md"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/docs/transaction-review-d1.md"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": null,
+      "included_as": ".ai/docs/windows11-ntfs-checklist.md",
+      "original_preserved": true,
+      "path": ".ai/docs/windows11-ntfs-checklist.md",
+      "source_sha256": "812a989880058437d119e2c4a971c94e98682bea6f6f96d8ec30a06d2a0ed628"
+    },
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": "Empty placeholder generated independently; original never copied.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/evidence/.gitkeep"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Empty placeholder generated independently; original never copied.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/.gitkeep"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/deployment/included-excluded-files.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/deployment/ua-kb-clean.zip"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/deployment/ua-kb-clean.zip.sha256"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/deployment/verification.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/examples/canonical-graph.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/examples/knowledge-report.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/examples/knowledge-report.txt"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/examples/technical-preview-graph.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/extraction.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/harbor-compatibility-inspection.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/harbor-compatibility-proposal.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/normalization.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/population-demo.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/population-plan.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "generated-artifacts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/generated/scan.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": "Empty placeholder generated independently; original never copied.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/knowledge/claims/.gitkeep"
+    },
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": "Empty placeholder generated independently; original never copied.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/knowledge/decisions/.gitkeep"
+    },
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": "Empty placeholder generated independently; original never copied.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/knowledge/domains/.gitkeep"
+    },
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": "Empty placeholder generated independently; original never copied.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/knowledge/open-questions/.gitkeep"
+    },
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": "Empty placeholder generated independently; original never copied.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/knowledge/relationships/.gitkeep"
+    },
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": null,
+      "included_as": ".ai/manifest.yaml",
+      "original_preserved": true,
+      "path": ".ai/manifest.yaml",
+      "source_sha256": "cf66deb83a7c1503ee0b9a26bebe8ffe64a0d4ff8a3690b8040e4c3a1d4ab239"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/schema/claim.schema.json",
+      "original_preserved": true,
+      "path": ".ai/schema/claim.schema.json",
+      "source_sha256": "38d2b0564786f19262a5c6697d6b593e95fd04a4011485f32d8ffd5fa453568f"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/schema/evidence.schema.json",
+      "original_preserved": true,
+      "path": ".ai/schema/evidence.schema.json",
+      "source_sha256": "b39b5f4f08c18abb57a6c9f49e168dae20394b5d51537784b311310aa739626e"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/schema/relationship.schema.json",
+      "original_preserved": true,
+      "path": ".ai/schema/relationship.schema.json",
+      "source_sha256": "546ef458de4a2cf46eec33196de0eb09a21b114eb8c237373184cbcf557201fe"
+    },
+    {
+      "archive_transformation": null,
+      "category": "required-scaffold-files",
+      "exclusion_reason": "Empty placeholder generated independently; original never copied.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/sources/.gitkeep"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Empty placeholder generated independently; original never copied.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/.gitkeep"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/population/coordination.lock"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/population/plans/46957d9d2a5d175d9b9156865f6622da8eeb27c535f7de07da6573ea9e9581c9.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/stage2-increment-a.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/stage2-increment-b.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/stage2-increment-c.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/stage2-increment-d.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/stage2-increment-d1.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/stage2-increment-e.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "runtime-state-plans-and-journals",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/state/verification.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/tools/compatibility_adapter.py",
+      "original_preserved": true,
+      "path": ".ai/tools/compatibility_adapter.py",
+      "source_sha256": "b0ec54bd28964e0a849fd2bbad672fbfbe5ebd5f986af234aea5b5d0d8447424"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/tools/compatibility_inspector.py",
+      "original_preserved": true,
+      "path": ".ai/tools/compatibility_inspector.py",
+      "source_sha256": "eec7f618d3c3e97418cbe620cd5fb7c19b0483fc440cd9443030cfacf790b8a8"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/deployment_package.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "synthetic-sample-data",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/examples/basis.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "synthetic-sample-data",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/examples/claim.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "synthetic-sample-data",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/examples/evidence.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "synthetic-sample-data",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/examples/existing-knowledge/README.md"
+    },
+    {
+      "archive_transformation": null,
+      "category": "synthetic-sample-data",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/examples/existing-knowledge/fixture.json"
+    },
+    {
+      "archive_transformation": null,
+      "category": "synthetic-sample-data",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/examples/graph_demo.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "synthetic-sample-data",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/examples/relationship.json"
+    },
+    {
+      "archive_transformation": "clean-runtime registry",
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/tools/kb.py",
+      "original_preserved": true,
+      "path": ".ai/tools/kb.py",
+      "source_sha256": "e6e1d8ba668f8725d5b17bccb2b25be07066783d17f2a9ba99e66b82912036e6"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/tools/knowledge_graph.py",
+      "original_preserved": true,
+      "path": ".ai/tools/knowledge_graph.py",
+      "source_sha256": "c6bff1c5bdbd292869e3a1920cfa164644cfa8cb9ed87d7f386dbd63e2cb2c68"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/tools/population_dotnet.py",
+      "original_preserved": true,
+      "path": ".ai/tools/population_dotnet.py",
+      "source_sha256": "c11510aacc17192a95eb783add13cc1ed29f4f37cddcb3f9d8b9e4821e0dd837"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/tools/population_normalize.py",
+      "original_preserved": true,
+      "path": ".ai/tools/population_normalize.py",
+      "source_sha256": "7528fa063dd51bb91a579f723bce4457f9bf50cfd5c8e6271dfaedc6b79d784e"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/tools/population_scan.py",
+      "original_preserved": true,
+      "path": ".ai/tools/population_scan.py",
+      "source_sha256": "048969a5c7606a64487a385dd8bc65c3f5574d3e6f2a6692ff3dd50134d38794"
+    },
+    {
+      "archive_transformation": null,
+      "category": "reusable-framework-code-and-contracts",
+      "exclusion_reason": null,
+      "included_as": ".ai/tools/population_transaction.py",
+      "original_preserved": true,
+      "path": ".ai/tools/population_transaction.py",
+      "source_sha256": "f427b6c362f3881dab1c0fe1a2b693da6735649f246d31482f541a9496ad3648"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/tests/test_acceptance.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/tests/test_adapter.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/tests/test_compatibility.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/tests/test_deployment.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/tests/test_extract.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/tests/test_graph.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/tests/test_normalize.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/tests/test_population.py"
+    },
+    {
+      "archive_transformation": null,
+      "category": "framework-tests-and-documentation",
+      "exclusion_reason": "Outside explicit runtime allowlist; retained only in development repository.",
+      "included_as": null,
+      "original_preserved": true,
+      "path": ".ai/tools/tests/test_scan.py"
+    }
+  ],
+  "package_files": [
+    {
+      "bytes": 96,
+      "path": ".ai/.gitignore",
+      "sha256": "2f0b982d587c0fc21ef07e490659946b4ae421ca8ca63ab6baf9aa856dd9783a"
+    },
+    {
+      "bytes": 2273,
+      "path": ".ai/README.md",
+      "sha256": "f2d014857cdf474f6b333916922bdf9c2d4c74dac0713194985be7f2ded44539"
+    },
+    {
+      "bytes": 19515,
+      "path": ".ai/docs/clean-deployment.md",
+      "sha256": "fd359f29d5badd35113e01da7d846137410d18a3673f35ac48d93b62f8f5fa66"
+    },
+    {
+      "bytes": 16127,
+      "path": ".ai/docs/compatibility-adapter.md",
+      "sha256": "8c8248d534e574f4e6eae4d6df62dfbccea872e63d917fed0321265104047dd0"
+    },
+    {
+      "bytes": 11215,
+      "path": ".ai/docs/compatibility-inspector.md",
+      "sha256": "faefdee1d1f4a25e332cf8510c368f595bc07c7b393b6d5418867f829ffa5ae9"
+    },
+    {
+      "bytes": 16830,
+      "path": ".ai/docs/contract-v1.md",
+      "sha256": "e9b88bb51bc5bcf55d08e6497debdd7705d2a7a9be83b71372db13d6f9343b76"
+    },
+    {
+      "bytes": 1915,
+      "path": ".ai/docs/evidence-and-confidence.md",
+      "sha256": "5454870a1320c5cd1bee85167b167eeb0e8eb140db1821cd40297dbf6c3d7258"
+    },
+    {
+      "bytes": 13695,
+      "path": ".ai/docs/graphs-and-reports.md",
+      "sha256": "c6853077f7b797ea6142eac7d549b4e6e6a293faae9ed25179cb9d3e31ed0f6b"
+    },
+    {
+      "bytes": 1599,
+      "path": ".ai/docs/knowledge-lifecycle.md",
+      "sha256": "28f74864aa5d486d38cac803e8310727550f8353440d0a97741d7de09f8ea818"
+    },
+    {
+      "bytes": 10466,
+      "path": ".ai/docs/population-apply.md",
+      "sha256": "88f9a9dde01b3f636cdfb6229dc5b7ce3d9302d7a07306db5ceba1ddc5278f26"
+    },
+    {
+      "bytes": 7868,
+      "path": ".ai/docs/population-extract.md",
+      "sha256": "4e854016f28c186d168b471128d57da6bf73e33703ef4e4a0a56debe2f99ea2e"
+    },
+    {
+      "bytes": 8505,
+      "path": ".ai/docs/population-normalize.md",
+      "sha256": "7b35985479869f7c7e836890c34b83e484fc8a830d605880edf604c6b5b995a8"
+    },
+    {
+      "bytes": 4374,
+      "path": ".ai/docs/population-scan.md",
+      "sha256": "4853b0ca2cf3216f809e38c95702b5d03bb465b4cc943a3b2e3518d20df70207"
+    },
+    {
+      "bytes": 1556,
+      "path": ".ai/docs/schema-versioning.md",
+      "sha256": "3b865bb1328a004dc680bb93401cee226e018d207d007b6f66052407a0b1039e"
+    },
+    {
+      "bytes": 8579,
+      "path": ".ai/docs/windows11-ntfs-checklist.md",
+      "sha256": "812a989880058437d119e2c4a971c94e98682bea6f6f96d8ec30a06d2a0ed628"
+    },
+    {
+      "bytes": 0,
+      "path": ".ai/evidence/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": ".ai/generated/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": ".ai/knowledge/claims/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": ".ai/knowledge/decisions/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": ".ai/knowledge/domains/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": ".ai/knowledge/open-questions/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": ".ai/knowledge/relationships/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 411,
+      "path": ".ai/manifest.yaml",
+      "sha256": "cf66deb83a7c1503ee0b9a26bebe8ffe64a0d4ff8a3690b8040e4c3a1d4ab239"
+    },
+    {
+      "bytes": 1861,
+      "path": ".ai/schema/claim.schema.json",
+      "sha256": "38d2b0564786f19262a5c6697d6b593e95fd04a4011485f32d8ffd5fa453568f"
+    },
+    {
+      "bytes": 2426,
+      "path": ".ai/schema/evidence.schema.json",
+      "sha256": "b39b5f4f08c18abb57a6c9f49e168dae20394b5d51537784b311310aa739626e"
+    },
+    {
+      "bytes": 985,
+      "path": ".ai/schema/relationship.schema.json",
+      "sha256": "546ef458de4a2cf46eec33196de0eb09a21b114eb8c237373184cbcf557201fe"
+    },
+    {
+      "bytes": 0,
+      "path": ".ai/sources/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": ".ai/state/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 22497,
+      "path": ".ai/tools/compatibility_adapter.py",
+      "sha256": "b0ec54bd28964e0a849fd2bbad672fbfbe5ebd5f986af234aea5b5d0d8447424"
+    },
+    {
+      "bytes": 29795,
+      "path": ".ai/tools/compatibility_inspector.py",
+      "sha256": "eec7f618d3c3e97418cbe620cd5fb7c19b0483fc440cd9443030cfacf790b8a8"
+    },
+    {
+      "bytes": 24432,
+      "path": ".ai/tools/kb.py",
+      "sha256": "a22e45928061b65141ca9543671dbb43d93bf61051344f6a05f2d0de58dbde7b"
+    },
+    {
+      "bytes": 21498,
+      "path": ".ai/tools/knowledge_graph.py",
+      "sha256": "c6bff1c5bdbd292869e3a1920cfa164644cfa8cb9ed87d7f386dbd63e2cb2c68"
+    },
+    {
+      "bytes": 19093,
+      "path": ".ai/tools/population_dotnet.py",
+      "sha256": "c11510aacc17192a95eb783add13cc1ed29f4f37cddcb3f9d8b9e4821e0dd837"
+    },
+    {
+      "bytes": 20484,
+      "path": ".ai/tools/population_normalize.py",
+      "sha256": "7528fa063dd51bb91a579f723bce4457f9bf50cfd5c8e6271dfaedc6b79d784e"
+    },
+    {
+      "bytes": 5356,
+      "path": ".ai/tools/population_scan.py",
+      "sha256": "048969a5c7606a64487a385dd8bc65c3f5574d3e6f2a6692ff3dd50134d38794"
+    },
+    {
+      "bytes": 29117,
+      "path": ".ai/tools/population_transaction.py",
+      "sha256": "f427b6c362f3881dab1c0fe1a2b693da6735649f246d31482f541a9496ad3648"
+    },
+    {
+      "bytes": 6975,
+      "path": ".ai/deployment-profile.json",
+      "sha256": "52224f8d40ed551dc383428e2657178a9d94cf97c7bc63ef67d1eff3afcef832"
+    }
+  ],
+  "profile": "clean-runtime-v1",
+  "source_scope": "Current development .ai; no source observations copied.",
+  "version": "1.0"
+}

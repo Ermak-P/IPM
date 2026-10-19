@@ -1,0 +1,127 @@
+{
+  "archive": {
+    "byte_reproducible": true,
+    "bytes": 316093,
+    "file": "ua-kb-clean.zip",
+    "files": 37,
+    "profile": "clean-runtime-v1",
+    "runtime_modules": 8,
+    "sha256": "7df3021aefa51a2e9e673d2f2a9802a2373892cbfd639c93d207c152e8708cda"
+  },
+  "baseline": "1371e955f04a1b45783dad5d4d298a285df87a92",
+  "disposable_deployment": {
+    "canonical_and_preview_graphs_distinct": true,
+    "canonical_claims_after_commands": 0,
+    "entire_clean_ai_byte_hashes_unchanged_after_commands": true,
+    "evaluation_host_file_set_and_byte_hashes_preserved": true,
+    "existing_legacy_ai_extraction_refused": true,
+    "extracted_facts": 29,
+    "input": "Existing six-project synthetic .NET fixture copied locally with pre-existing Harbor legacy .ai",
+    "legacy": "Original untouched; separate sibling .ai snapshot read-only during inspection; not inside clean source tree",
+    "new_runtime_init_excludes_samples_and_state": true,
+    "original_host_and_legacy_byte_hashes_preserved": true,
+    "proposed_technical_claims": 29,
+    "read_only_legacy_snapshot_byte_hashes_preserved": true,
+    "runtime_commands_exit_zero": [
+      "version",
+      "validate",
+      "check-scaffold",
+      "populate status",
+      "build --view canonical",
+      "scan",
+      "extract",
+      "normalize",
+      "build --view technical-preview",
+      "report",
+      "inspect-compatibility",
+      "adapt-compatibility",
+      "init (idempotent)"
+    ],
+    "runtime_init_over_foreign_legacy_refused_exit": 1,
+    "scan_sources": 7,
+    "test": "test_deployment.DeploymentTests.test_complete_clean_deployment_and_all_cli_runtime_commands"
+  },
+  "environment": "Linux x86_64 / Python 3.12.14 / .NET SDK 10.0.402",
+  "executed_commands": [
+    {
+      "command": "python -B -m unittest discover -s .ai/tools/tests -p 'test_*.py'",
+      "exit": 0,
+      "result": "300 passed"
+    },
+    {
+      "command": "python -B -m unittest discover -s .ai/tools/tests -p test_deployment.py",
+      "exit": 0,
+      "result": "10 passed"
+    },
+    {
+      "command": "dotnet vstest existing unit/integration net10.0 DLLs --ResultsDirectory:/tmp/ipm-stage34-dotnet",
+      "exit": 0,
+      "result": "27 passed; no build/restore"
+    },
+    {
+      "command": "python -B .ai/tools/deployment_package.py --output .ai/generated/deployment/ua-kb-clean.zip --inventory .ai/generated/deployment/included-excluded-files.json",
+      "exit": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py validate --json",
+      "exit": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py check-scaffold --json",
+      "exit": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py version --json",
+      "exit": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0
+    }
+  ],
+  "fresh_scaffold": {
+    "contract": "unchanged v1.0",
+    "examples": "empty directory only",
+    "generated_graphs": 0,
+    "plans_receipts_journals_locks": 0,
+    "project_claims": 0,
+    "project_evidence": 0,
+    "project_relationships": 0,
+    "source_observations": 0,
+    "state": "empty .gitkeep only"
+  },
+  "integrity": {
+    "canonical_schema_source_metadata_manifest_sha256_files_unchanged": 11,
+    "existing_development_tracked_files_changed": 0,
+    "existing_fixtures_and_generated_outputs_retained": true,
+    "existing_host_sha256_files_unchanged": 1148,
+    "pre_existing_runtime_state_never_removed_or_overwritten": true,
+    "real_population_apply_performed": false
+  },
+  "privacy": {
+    "corporate_data_used": false,
+    "discovered_host_scripts_executed": false,
+    "external_api_llm_upload_telemetry_required": false
+  },
+  "profile_scope": "Archive-only registry substitution and operational-document observation-section removal; original source files remain unchanged.",
+  "remaining_gates": [
+    "Native Windows 11/NTFS procedure NOT EXECUTED; native gate OPEN.",
+    "Run full tests from separate development checkout; runtime tests directory is empty, zero-test discovery is not acceptance.",
+    "Real corporate schema/Graph Builder ownership, authoritative evidence and semantic assertion verification need explicit local review.",
+    "No real deployment/population/migration GO; use new evaluation copies and separately authorized future decisions."
+  ],
+  "stage": "3.4 clean deployment",
+  "tests": {
+    "baseline_python_passed": 290,
+    "dotnet_failed": 0,
+    "dotnet_integration": 15,
+    "dotnet_passed": 27,
+    "dotnet_skipped": 0,
+    "dotnet_unit": 12,
+    "errors": 0,
+    "failures": 0,
+    "final_python_passed": 300,
+    "new_deployment_tests": 10,
+    "skipped": 0
+  }
+}
