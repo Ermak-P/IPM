@@ -1,0 +1,1065 @@
+{
+  "blockers": [
+    {
+      "code": "graph-builder-ownership-selection-required",
+      "path": ".ai/tools/knowledge_graph.py",
+      "scope": "operation"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "ARCH/4",
+      "id_fingerprint": "sha256:3aa60c0913f06447f534d40673df217e5f3483614e1820986103ad667b0c6ce5",
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "EDGE/4",
+      "id_fingerprint": "sha256:b443015243820120272fa815a17e443b0f688b239bb9d71efc030594b8d9c16a",
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "EV/17",
+      "id_fingerprint": "sha256:aac91de91ad4faa513dbee6f1d51cd167a3e18e17338769205d9a9487560e591",
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "EV/18",
+      "id_fingerprint": "sha256:ec4e726fd54b159d93456bcf152c68c93108ffae628ef7a2d60fe119c0faed72",
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "RULE/17",
+      "id_fingerprint": "sha256:3913d0c6a41bb94fa6d38df8a6e52ea27427a21a9b576cb01f19f9fbccc81dce",
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "manifest-incompatible-with-v1",
+      "path": ".ai/manifest.yaml",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "captured_at",
+        "description",
+        "provenance",
+        "source",
+        "status",
+        "substantiates",
+        "type"
+      ],
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "captured_at",
+        "description",
+        "provenance",
+        "source",
+        "status",
+        "substantiates",
+        "type"
+      ],
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "conflicts_with",
+        "depends_on",
+        "evidence",
+        "last_verified",
+        "provenance",
+        "statement",
+        "status",
+        "type"
+      ],
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "conflicts_with",
+        "depends_on",
+        "evidence",
+        "last_verified",
+        "provenance",
+        "statement",
+        "status",
+        "type"
+      ],
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "from",
+        "provenance",
+        "to",
+        "type"
+      ],
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/README.md",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/evidence",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/generated",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/knowledge/claims",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/knowledge/decisions",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/knowledge/domains",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/knowledge/relationships",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/manifest.yaml",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/schema",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/schema/claim.schema.json",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/sources",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/state",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/tools",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/tools/knowledge_graph.py",
+      "scope": "integration"
+    },
+    {
+      "code": "ownership-unknown-no-adoption-authorized",
+      "path": ".ai",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/generated",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/generated/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/generated/curator-notes.md",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/state",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/state/team-decisions.md",
+      "scope": "integration"
+    },
+    {
+      "code": "schema-incompatible-or-unsupported",
+      "path": ".ai/schema/claim.schema.json",
+      "scope": "integration"
+    },
+    {
+      "code": "tool-ownership-unverified",
+      "path": ".ai/tools/knowledge_graph.py",
+      "scope": "integration"
+    },
+    {
+      "code": "unknown-content-not-interpreted",
+      "path": ".ai/README.md",
+      "scope": "integration"
+    },
+    {
+      "code": "unrecognized-v1-lifecycle-status",
+      "known_legacy_label": "approved",
+      "legacy_status_present": true,
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "unrecognized-v1-lifecycle-status",
+      "known_legacy_label": "current",
+      "legacy_status_present": true,
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "unrecognized-v1-lifecycle-status",
+      "known_legacy_label": "verified",
+      "legacy_status_present": true,
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "unrecognized-v1-lifecycle-status",
+      "known_legacy_label": "withdrawn",
+      "legacy_status_present": true,
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "unsupported-component-relationship-not-claim-dependency",
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 13,
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 14,
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 15,
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 16,
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 9,
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    }
+  ],
+  "canonical_validation_performed": false,
+  "command": "inspect-compatibility",
+  "complete": true,
+  "diagnostics": [
+    {
+      "code": "graph-builder-ownership-selection-required",
+      "path": ".ai/tools/knowledge_graph.py",
+      "scope": "operation"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "ARCH/4",
+      "id_fingerprint": "sha256:3aa60c0913f06447f534d40673df217e5f3483614e1820986103ad667b0c6ce5",
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "EDGE/4",
+      "id_fingerprint": "sha256:b443015243820120272fa815a17e443b0f688b239bb9d71efc030594b8d9c16a",
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "EV/17",
+      "id_fingerprint": "sha256:aac91de91ad4faa513dbee6f1d51cd167a3e18e17338769205d9a9487560e591",
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "EV/18",
+      "id_fingerprint": "sha256:ec4e726fd54b159d93456bcf152c68c93108ffae628ef7a2d60fe119c0faed72",
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "id-incompatible-with-v1",
+      "declared_id": "RULE/17",
+      "id_fingerprint": "sha256:3913d0c6a41bb94fa6d38df8a6e52ea27427a21a9b576cb01f19f9fbccc81dce",
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "manifest-incompatible-with-v1",
+      "path": ".ai/manifest.yaml",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-or-invalid-provenance",
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "captured_at",
+        "description",
+        "provenance",
+        "source",
+        "status",
+        "substantiates",
+        "type"
+      ],
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "captured_at",
+        "description",
+        "provenance",
+        "source",
+        "status",
+        "substantiates",
+        "type"
+      ],
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "conflicts_with",
+        "depends_on",
+        "evidence",
+        "last_verified",
+        "provenance",
+        "statement",
+        "status",
+        "type"
+      ],
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "conflicts_with",
+        "depends_on",
+        "evidence",
+        "last_verified",
+        "provenance",
+        "statement",
+        "status",
+        "type"
+      ],
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "missing-v1-required-fields",
+      "fields": [
+        "from",
+        "provenance",
+        "to",
+        "type"
+      ],
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/README.md",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/evidence",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/generated",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/knowledge/claims",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/knowledge/decisions",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/knowledge/domains",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/knowledge/relationships",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/manifest.yaml",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/schema",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/schema/claim.schema.json",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/sources",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/state",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/tools",
+      "scope": "integration"
+    },
+    {
+      "code": "occupied-framework-path-owner-approval-required",
+      "path": ".ai/tools/knowledge_graph.py",
+      "scope": "integration"
+    },
+    {
+      "code": "ownership-unknown-no-adoption-authorized",
+      "path": ".ai",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/generated",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/generated/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/generated/curator-notes.md",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/state",
+      "scope": "integration"
+    },
+    {
+      "code": "potentially-durable-content-preserve",
+      "path": ".ai/state/team-decisions.md",
+      "scope": "integration"
+    },
+    {
+      "code": "schema-incompatible-or-unsupported",
+      "path": ".ai/schema/claim.schema.json",
+      "scope": "integration"
+    },
+    {
+      "code": "tool-ownership-unverified",
+      "path": ".ai/tools/knowledge_graph.py",
+      "scope": "integration"
+    },
+    {
+      "code": "unknown-content-not-interpreted",
+      "path": ".ai/README.md",
+      "scope": "integration"
+    },
+    {
+      "code": "unrecognized-v1-lifecycle-status",
+      "known_legacy_label": "approved",
+      "legacy_status_present": true,
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "unrecognized-v1-lifecycle-status",
+      "known_legacy_label": "current",
+      "legacy_status_present": true,
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "unrecognized-v1-lifecycle-status",
+      "known_legacy_label": "verified",
+      "legacy_status_present": true,
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "unrecognized-v1-lifecycle-status",
+      "known_legacy_label": "withdrawn",
+      "legacy_status_present": true,
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "unsupported-component-relationship-not-claim-dependency",
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 13,
+      "path": ".ai/evidence/source.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 14,
+      "path": ".ai/evidence/review.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 15,
+      "path": ".ai/knowledge/claims/architecture.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 16,
+      "path": ".ai/knowledge/claims/rule.json",
+      "scope": "integration"
+    },
+    {
+      "code": "v1-record-structural-errors",
+      "count": 9,
+      "path": ".ai/knowledge/relationships/component.json",
+      "scope": "integration"
+    }
+  ],
+  "final_snapshot_fingerprint": "sha256:fab3ba3eb343f8999fe3358541d3cfa4aaadaf0c9ef619a7703f44e25ebf5ca3",
+  "fingerprint_scope": "bounded .ai inventory paths/types/content hashes; not whole-host or excluded bytes",
+  "graph_tools": [
+    {
+      "activated": false,
+      "declarations": [
+        {
+          "declared_owner": "harbor-architecture-team",
+          "inputs": [
+            ".ai/knowledge/claims",
+            ".ai/knowledge/domains",
+            ".ai/knowledge/relationships"
+          ],
+          "origin": "graph-contract",
+          "outputs": [
+            ".ai/generated/architecture.json"
+          ]
+        },
+        {
+          "declared_owner": "harbor-architecture-team",
+          "inputs": [],
+          "origin": "manifest-declaration",
+          "outputs": []
+        },
+        {
+          "declared_owner": null,
+          "inputs": [],
+          "origin": "filename-heuristic",
+          "outputs": []
+        }
+      ],
+      "declared_inputs": [
+        ".ai/knowledge/claims",
+        ".ai/knowledge/domains",
+        ".ai/knowledge/relationships"
+      ],
+      "declared_outputs": [
+        ".ai/generated/architecture.json"
+      ],
+      "declared_owner": "harbor-architecture-team",
+      "declared_owners": [
+        "harbor-architecture-team"
+      ],
+      "discovery": [
+        "filename-heuristic",
+        "graph-contract",
+        "manifest-declaration"
+      ],
+      "entrypoint": ".ai/tools/knowledge_graph.py",
+      "ownership": "unknown-provisional",
+      "universal_overlap": "possible"
+    }
+  ],
+  "inspection_format": "existing-knowledge-compatibility",
+  "inspection_version": "1.0",
+  "integration_approved": false,
+  "inventory": [
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai",
+      "role": "unknown",
+      "type": "directory"
+    },
+    {
+      "bytes": 192,
+      "content_fingerprint": "sha256:d40622e6c5d064cc882b99f7a9dc9ad3349ea5b9543bf98553a050e1ed874eef",
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/README.md",
+      "role": "unknown",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/business",
+      "role": "business-documentation",
+      "type": "directory"
+    },
+    {
+      "bytes": 138,
+      "content_fingerprint": "sha256:ccf4549701af64360c27505078d7f579ead8675133d9d3201e6da2b4b4807ff1",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/business/concepts.yaml",
+      "role": "business-documentation",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/evidence",
+      "role": "unknown",
+      "type": "directory"
+    },
+    {
+      "bytes": 219,
+      "content_fingerprint": "sha256:707d300873557b7dc49e0dac4b268553f7dae1052d0b069dd0d2bb6913d251f1",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/evidence/review.json",
+      "role": "evidence",
+      "structured_status": "json-object",
+      "type": "file"
+    },
+    {
+      "bytes": 163,
+      "content_fingerprint": "sha256:4fa344d30a9bc1be3f7c699051c0bf9b6d4d2942b65f8db67fbcf58cf8d65ab4",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/evidence/source.json",
+      "role": "evidence",
+      "structured_status": "json-object",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/generated",
+      "role": "potentially-durable-generated",
+      "type": "directory"
+    },
+    {
+      "bytes": 286,
+      "content_fingerprint": "sha256:9de2aac4b801e67ebbd9d635e8a12df175e8d2f304053c7fc51668edfdf30d84",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/generated/architecture.json",
+      "role": "potentially-durable-generated",
+      "type": "file"
+    },
+    {
+      "bytes": 178,
+      "content_fingerprint": "sha256:d46e08fb117b81842569a847f82c79dd257897b322384f046b1a56fff28a4430",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/generated/curator-notes.md",
+      "role": "potentially-durable-generated",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge",
+      "role": "unknown",
+      "type": "directory"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge/claims",
+      "role": "unknown",
+      "type": "directory"
+    },
+    {
+      "bytes": 229,
+      "content_fingerprint": "sha256:38ad889258f53e9d14296c2943488126b2c60f2a8d29df89ea2dd27c9622a102",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge/claims/architecture.json",
+      "role": "claims",
+      "structured_status": "json-object",
+      "type": "file"
+    },
+    {
+      "bytes": 280,
+      "content_fingerprint": "sha256:392de03e21e9c0821cf9c2e232da99b61120dd914e41e257ff95c4896135f01b",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge/claims/rule.json",
+      "role": "claims",
+      "structured_status": "json-object",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge/decisions",
+      "role": "decisions",
+      "type": "directory"
+    },
+    {
+      "bytes": 189,
+      "content_fingerprint": "sha256:1112c2245200f036845b80c4c4e65e83a1f79956e96c732fbd14fb770615c00f",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge/decisions/ADR-017.md",
+      "role": "decisions",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge/domains",
+      "role": "domain-documentation",
+      "type": "directory"
+    },
+    {
+      "bytes": 141,
+      "content_fingerprint": "sha256:6523874a1aac1200069273daeb1eecb68f021849920ebb2dcafb8d6232647ebb",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge/domains/ticketing.md",
+      "role": "domain-documentation",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge/relationships",
+      "role": "unknown",
+      "type": "directory"
+    },
+    {
+      "bytes": 115,
+      "content_fingerprint": "sha256:18e59a0ada261ed4da3ec7494e163733873d20a9ec8a82ff45dd6aaa40938e72",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/knowledge/relationships/component.json",
+      "role": "relationships",
+      "structured_status": "json-object",
+      "type": "file"
+    },
+    {
+      "bytes": 156,
+      "content_fingerprint": "sha256:083199de374ce11f048819e83ef946854cc9e58aecb578051ed416e96d3c3cd2",
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/manifest.yaml",
+      "role": "manifest",
+      "structured_status": "json-object",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/schema",
+      "role": "schemas",
+      "type": "directory"
+    },
+    {
+      "bytes": 183,
+      "content_fingerprint": "sha256:b90b01e9ced0a52e6bd490f4ce2d3af47b9bd3ade894dbb2447383b59da51dfb",
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/schema/claim.schema.json",
+      "role": "schemas",
+      "structured_status": "json-object",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/sources",
+      "role": "sources",
+      "type": "directory"
+    },
+    {
+      "bytes": 105,
+      "content_fingerprint": "sha256:fa7fb813c54d5c7ee54c272b5917ad8bdd11b7eafe6d44ed5fce766059cfa405",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/sources/access.md",
+      "role": "sources",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/state",
+      "role": "potentially-durable-state",
+      "type": "directory"
+    },
+    {
+      "bytes": 166,
+      "content_fingerprint": "sha256:916ae45dfe5fd4eefc900fa5f9f2750172ded1fef61f51ffbb8758620ad59ac0",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/state/team-decisions.md",
+      "role": "potentially-durable-state",
+      "type": "file"
+    },
+    {
+      "content_fingerprint": null,
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/tools",
+      "role": "tools",
+      "type": "directory"
+    },
+    {
+      "bytes": 378,
+      "content_fingerprint": "sha256:a73e07baf4a0cde0518499d9646975af9b81dbf882c302f7a9e27bf6c3c8bfc7",
+      "disposable": false,
+      "occupied_framework_path": false,
+      "ownership": "unknown-provisional",
+      "path": ".ai/tools/graph-contract.json",
+      "role": "tools",
+      "structured_status": "json-object",
+      "type": "file"
+    },
+    {
+      "bytes": 232,
+      "content_fingerprint": "sha256:05e1d00b0c4faa71aa4b79c2c0ed6e3bac9cd4fe62af1e9ab5d1fa82ade6ae6d",
+      "disposable": false,
+      "occupied_framework_path": true,
+      "ownership": "unknown-provisional",
+      "path": ".ai/tools/knowledge_graph.py",
+      "role": "tools",
+      "type": "file"
+    }
+  ],
+  "inventory_summary": {
+    "by_role": {
+      "business-documentation": 2,
+      "claims": 2,
+      "decisions": 2,
+      "domain-documentation": 2,
+      "evidence": 2,
+      "manifest": 1,
+      "potentially-durable-generated": 3,
+      "potentially-durable-state": 2,
+      "relationships": 1,
+      "schemas": 2,
+      "sources": 2,
+      "tools": 3,
+      "unknown": 6
+    },
+    "by_type": {
+      "directory": 13,
+      "file": 17
+    },
+    "content_bytes_hashed": 3350,
+    "entries": 30,
+    "structured_records_recognized": 5
+  },
+  "limitations": [
+    "No integration, migration approval, canonical conversion or status changes.",
+    "Only strict bounded JSON objects and explicit Harbor revision 3 fields are analyzed; YAML/prose/scripts are not interpreted.",
+    "Graph discovery is declarations plus filename heuristics; undeclared or obfuscated tools may be missed.",
+    "Structural field diagnostics are not full dataset validation, semantic truth or authority verification.",
+    "Stable trusted tree required; portable checks detect observable races, not hostile same-user path swaps.",
+    "Native Windows/NTFS acceptance remains open."
+  ],
+  "manifest": {
+    "accepted_as_contract": false,
+    "classification": "foreign-json-declaration",
+    "declared_format": "harbor-team-architecture"
+  },
+  "ok": true,
+  "provisional_ownership": {
+    "all_existing_content_preserved": true,
+    "default": "unknown-provisional",
+    "disposable_paths": [],
+    "framework_ownership_inferred": false
+  },
+  "recognized_capabilities": [
+    "bounded-read-only-ai-inventory",
+    "graph-metadata-discovery",
+    "harbor-revision-3-json-field-diagnostics",
+    "no-tool-execution",
+    "provisional-ownership-only",
+    "strict-json-metadata"
+  ],
+  "repository_snapshot_fingerprint": "sha256:fab3ba3eb343f8999fe3358541d3cfa4aaadaf0c9ef619a7703f44e25ebf5ca3",
+  "schema_declarations": [
+    {
+      "dialect": "draft-2020-12",
+      "matches_pinned_v1": [],
+      "path": ".ai/schema/claim.schema.json",
+      "remote_schema_fetched": false
+    }
+  ],
+  "scope": ".ai only; source files outside .ai are not read",
+  "suggested_integration_mode": "integration-blocked",
+  "unresolved_human_decisions": [
+    "Identify knowledge/tool owners and approve any proposed integration scope.",
+    "Select exactly one responsible graph builder; preserve canonical versus declared-preview trust boundaries.",
+    "Review unsupported schemas, IDs, references, lifecycle, provenance and transaction state without conversion.",
+    "Classify generated/state content before any future write or cleanup; no disposal is authorized."
+  ]
+}

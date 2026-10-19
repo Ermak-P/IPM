@@ -68,3 +68,8 @@ Increment E adds disposable canonical and technical-preview graphs and reports:
 see [graph semantics and trust boundaries](docs/graphs-and-reports.md).
 RAG and integrations are not implemented. Population always
 requires exact-plan approval; it does not confirm claims. Canonical contracts remain v1.0.
+
+Stage 3.2 adds strictly read-only inspection of independently owned `.ai`:
+`python -B .ai/tools/kb.py inspect-compatibility --root /existing/project --json`.
+No installation, migration or graph activation is performed; see
+[scope, output, ownership and safety limits](docs/compatibility-inspector.md).

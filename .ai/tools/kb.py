@@ -18,7 +18,8 @@ MANIFEST = {
 }
 DIRECTORIES = ['schema', 'knowledge/claims', 'knowledge/relationships', 'knowledge/domains',
                'knowledge/decisions', 'knowledge/open-questions', 'evidence', 'sources',
-               'generated', 'state', 'docs', 'tools', 'tools/tests', 'tools/examples']
+               'generated', 'state', 'docs', 'tools', 'tools/tests', 'tools/examples',
+               'tools/examples/existing-knowledge']
 FILES = ['README.md', 'manifest.yaml', 'schema/claim.schema.json', 'schema/evidence.schema.json',
          'schema/relationship.schema.json', 'docs/knowledge-lifecycle.md',
          'docs/evidence-and-confidence.md', 'docs/schema-versioning.md',
@@ -33,8 +34,11 @@ FILES += ['.gitignore']
 FILES += ['docs/transaction-review-d1.md', 'docs/windows11-ntfs-checklist.md']
 FILES += ['tools/knowledge_graph.py', 'tools/tests/test_graph.py', 'docs/graphs-and-reports.md',
           'tools/examples/graph_demo.py']
+FILES += ['tools/compatibility_inspector.py', 'tools/tests/test_compatibility.py',
+          'docs/compatibility-inspector.md', 'tools/examples/existing-knowledge/fixture.json',
+          'tools/examples/existing-knowledge/README.md']
 PLACEHOLDERS = [directory + '/.gitkeep' for directory in DIRECTORIES
-                if directory not in ['schema', 'docs', 'tools', 'tools/tests', 'tools/examples']]
+                if directory not in ['schema', 'docs', 'tools', 'tools/tests', 'tools/examples', 'tools/examples/existing-knowledge']]
 SOURCE = Path(__file__).resolve().parents[1]
 SCHEMA_HASHES = {
     'claim': '43c3c811e9a9f2b32dfcbeba1519d5a4f0024ca36378b457aeafcbf63da9d2cc',
@@ -287,7 +291,7 @@ def validate(base):
 
 def _main(stack):
     parser = argparse.ArgumentParser(description='Offline universal architecture knowledge base v1')
-    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract', 'normalize', 'populate', 'build', 'report'])
+    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract', 'normalize', 'populate', 'build', 'report', 'inspect-compatibility'])
     parser.add_argument('populate_action', nargs='?', choices=['prepare', 'apply', 'status', 'recover'])
     parser.add_argument('--root', type=Path, default=Path.cwd(), help='existing host repository directory')
     parser.add_argument('--json', action='store_true', help='machine-readable deterministic output')
@@ -305,6 +309,25 @@ def _main(stack):
         parser.error('--view requires build')
     if args.write_generated and args.command not in ['build', 'report']:
         parser.error('--write-generated requires build/report')
+    if args.command == 'inspect-compatibility':
+        if args.populate_action or args.plan or args.approve or args.dry_run or args.exclude:
+            parser.error('inspect-compatibility accepts only --root and --json')
+        from compatibility_inspector import CompatibilityInspector
+        try:
+            result = CompatibilityInspector().inspect(args.root)
+        except (OSError, ValueError, TypeError, KeyError, AttributeError, RecursionError):
+            result = {'command': args.command, 'ok': False, 'complete': False,
+                      'inspection_format': 'existing-knowledge-compatibility', 'inspection_version': '1.0',
+                      'integration_approved': False, 'suggested_integration_mode': 'integration-blocked',
+                      'errors': ['Inspection inputs unsafe, unsupported, changed or unreadable.']}
+        if args.json or not result['ok']:
+            print(json.dumps(result, sort_keys=True))
+        else:
+            print('Compatibility inspection: {entries} entries; complete={complete}; mode={mode}; integration approved=False'.format(
+                entries=result['inventory_summary']['entries'], complete=result['complete'],
+                mode=result['suggested_integration_mode']))
+            print('Blockers: ' + str(len(result['blockers'])) + '; ownership remains provisional.')
+        return 0 if result['ok'] else 1
     if args.command in ['build', 'report']:
         if args.populate_action or args.plan or args.approve or args.dry_run:
             parser.error('population options require populate')
