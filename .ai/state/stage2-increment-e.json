@@ -1,0 +1,89 @@
+{
+  "baseline": {
+    "dotnet": {
+      "failed": 0,
+      "passed": 27
+    },
+    "python": {
+      "failed": 0,
+      "passed": 169
+    }
+  },
+  "baseline_commit": "ca7a159a950be7e0f810d70f17bdb6ef8e2948d1",
+  "beyond_increment_e_implemented": false,
+  "branch": "work",
+  "changed_files": [
+    ".ai/README.md",
+    ".ai/docs/graphs-and-reports.md",
+    ".ai/docs/population-apply.md",
+    ".ai/docs/population-normalize.md",
+    ".ai/docs/population-scan.md",
+    ".ai/generated/examples/canonical-graph.json",
+    ".ai/generated/examples/knowledge-report.json",
+    ".ai/generated/examples/knowledge-report.txt",
+    ".ai/generated/examples/technical-preview-graph.json",
+    ".ai/state/stage2-increment-e.json",
+    ".ai/tools/examples/graph_demo.py",
+    ".ai/tools/kb.py",
+    ".ai/tools/knowledge_graph.py",
+    ".ai/tools/tests/test_graph.py"
+  ],
+  "current_repository_observations": {
+    "active_evaluated_dependencies": "unknown",
+    "canonical_claims": 0,
+    "canonical_evidence": 0,
+    "canonical_relationships": 0,
+    "declared_direct_project_references": 5,
+    "projects": 6,
+    "solutions": 1
+  },
+  "executed": {
+    "checks": {
+      "check-scaffold": "pass",
+      "example_regeneration": "all four artifacts exactly reproduced",
+      "git_diff_check": "pass",
+      "native_windows": "NOT EXECUTED; existing mocked tests retained",
+      "validate": "pass"
+    },
+    "dotnet": {
+      "command": "dotnet vstest tests/SyntheticIpm.UnitTests/bin/Debug/net10.0/SyntheticIpm.UnitTests.dll tests/SyntheticIpm.IntegrationTests/bin/Debug/net10.0/SyntheticIpm.IntegrationTests.dll",
+      "failed": 0,
+      "integration": 15,
+      "note": "Executed existing Linux build outputs; no build or package restore.",
+      "passed": 27,
+      "skipped": 0,
+      "unit": 12
+    },
+    "platform": "Linux, CPython 3.12; pinned .NET SDK 10.0.402",
+    "python": {
+      "command": "python -B -m unittest discover -s .ai/tools/tests -p 'test_*.py'",
+      "errors": 0,
+      "failed": 0,
+      "new_graph_report_tests": 40,
+      "passed": 209,
+      "skipped": 0
+    }
+  },
+  "graph_builder_preflight": "No pre-existing graph builder; earlier increments explicitly deferred it. One shared builder added.",
+  "increment": "Stage 2 Increment E only",
+  "integrity": {
+    "canonical_files_changed": 0,
+    "canonical_population_performed": false,
+    "canonical_schema_source_metadata_manifest_files_sha256_compared": 11,
+    "contract_schemas_validator_and_population_A_through_D1_implementation_changed": false,
+    "existing_ignored_prepared_plan_preserved": true,
+    "host_files_added_or_removed": 0,
+    "host_files_changed": 0,
+    "host_files_sha256_compared": 1148,
+    "real_transactions": []
+  },
+  "limitations": [
+    "Stable trusted input tree required; portable checks do not isolate hostile same-user path swaps.",
+    "Only declared direct dependencies; no MSBuild evaluation, restore, runtime inference or C# semantics.",
+    "Natural-language canonical claims are not interpreted; comparisons reuse existing normalizer limitations.",
+    "External and excluded evidence sources are not fetched; matching source hashes do not establish semantic truth.",
+    "Native Windows/NTFS execution remains unverified.",
+    "In-memory deterministic JSON; no incremental graph cache."
+  ],
+  "relationship_semantics": "v1 claim-only depends_on (directed acyclic) and conflicts_with (symmetric); optional relationship records must match claim arrays. ProjectReference is never converted to canonical depends_on."
+}

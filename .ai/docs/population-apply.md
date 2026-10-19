@@ -4,7 +4,8 @@ This extension preserves Contract v1.0, the schemas, core validator and A–C
 implementations. It stores validated proposals, not semantic truth. New technical
 claims remain NEEDS_HUMAN_CONFIRMATION with last_verified=null. Evidence retains
 the exact provenance and actual observation timestamp of the approved plan.
-No human-review event is generated. Increment E and graphs are not implemented.
+No human-review event is generated. Graph building and reporting are separate read-only Increment E extensions; see
+[graph semantics](graphs-and-reports.md).
 
 ## Existing canonical contract
 

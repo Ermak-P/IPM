@@ -31,6 +31,8 @@ FILES += ['tools/population_normalize.py', 'tools/tests/test_normalize.py', 'doc
 FILES += ['tools/population_transaction.py', 'tools/tests/test_population.py', 'docs/population-apply.md']
 FILES += ['.gitignore']
 FILES += ['docs/transaction-review-d1.md', 'docs/windows11-ntfs-checklist.md']
+FILES += ['tools/knowledge_graph.py', 'tools/tests/test_graph.py', 'docs/graphs-and-reports.md',
+          'tools/examples/graph_demo.py']
 PLACEHOLDERS = [directory + '/.gitkeep' for directory in DIRECTORIES
                 if directory not in ['schema', 'docs', 'tools', 'tools/tests', 'tools/examples']]
 SOURCE = Path(__file__).resolve().parents[1]
@@ -285,7 +287,7 @@ def validate(base):
 
 def _main(stack):
     parser = argparse.ArgumentParser(description='Offline universal architecture knowledge base v1')
-    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract', 'normalize', 'populate'])
+    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract', 'normalize', 'populate', 'build', 'report'])
     parser.add_argument('populate_action', nargs='?', choices=['prepare', 'apply', 'status', 'recover'])
     parser.add_argument('--root', type=Path, default=Path.cwd(), help='existing host repository directory')
     parser.add_argument('--json', action='store_true', help='machine-readable deterministic output')
@@ -293,8 +295,44 @@ def _main(stack):
     parser.add_argument('--approve', help='populate apply: explicit approval of the exact plan fingerprint')
     parser.add_argument('--dry-run', action='store_true', help='populate apply: validate without applying')
     parser.add_argument('--exclude', action='append', default=[],
-                        help='scan/extract/normalize or populate prepare: additional exclusions (repeatable)')
+                        help='scan/extract/normalize, populate prepare, technical-preview/report: additional exclusions (repeatable)')
+    parser.add_argument('--view', choices=['canonical', 'technical-preview'],
+                        help='build only: default canonical; technical-preview is noncanonical')
+    parser.add_argument('--write-generated', action='store_true',
+                        help='build/report only: save disposable JSON under .ai/generated/')
     args = parser.parse_args()
+    if args.view and args.command != 'build':
+        parser.error('--view requires build')
+    if args.write_generated and args.command not in ['build', 'report']:
+        parser.error('--write-generated requires build/report')
+    if args.command in ['build', 'report']:
+        if args.populate_action or args.plan or args.approve or args.dry_run:
+            parser.error('population options require populate')
+        if args.command == 'build' and (args.view or 'canonical') == 'canonical' and args.exclude:
+            parser.error('--exclude requires technical-preview or report')
+        from knowledge_graph import GraphBuilder, GraphInputError, human_report, save_generated
+        from population_transaction import PopulationError
+        try:
+            builder = GraphBuilder()
+            result = (builder.build(args.root, args.view or 'canonical', args.exclude)
+                      if args.command == 'build' else builder.report(args.root, args.exclude))
+            if args.write_generated:
+                filename = ((result['graph']['view'] + '-graph.json') if args.command == 'build'
+                            else 'knowledge-report.json')
+                save_generated(args.root, filename, result)
+        except GraphInputError as error:
+            result = {'command': args.command, 'ok': False, 'errors': [str(error)], **error.details}
+        except PopulationError as error:
+            result = {'command': args.command, 'ok': False, 'errors': [str(error)],
+                      'guidance': 'Run validate, extract, normalize or populate status/recover as appropriate.'}
+        except (OSError, ValueError, TypeError, KeyError, AttributeError):
+            result = {'command': args.command, 'ok': False,
+                      'errors': ['Graph/report inputs invalid, changed, unsafe, busy or recovery required; run validate, extract, normalize and populate status.']}
+        if args.json or args.command == 'build' or not result['ok']:
+            print(json.dumps(result, sort_keys=True))
+        else:
+            print(human_report(result), end='')
+        return 0 if result['ok'] else 1
     if args.command == 'populate':
         from population_transaction import PopulationStore, PopulationError
         action = args.populate_action or 'prepare'

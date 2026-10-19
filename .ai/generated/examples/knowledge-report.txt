@@ -1,0 +1,15 @@
+Canonical knowledge (structurally validated; semantic truth not established)
+Claims: 2; by type: {'technical_fact': 2}; by status: {'NEEDS_HUMAN_CONFIRMATION': 2}
+Evidence: 1; by status: {'active': 1}
+Claims needing verification: 2; explicit conflicts: 0
+Source evidence observations: {'matches-observed-hash': 1}
+Canonical claim components: 1; isolated claims: 0
+Technical observations (NONCANONICAL PREVIEW; declared, not evaluated)
+Solutions: 1; projects: 2; declared direct project references: 1
+Conditional references: 0; unresolved references: 0; skipped inputs: 1
+Comparison classifications (proposals only): {'add': 6, 'unchanged': 3, 'unresolved': 10}
+Validation: canonical=True; normalization=True
+Warning: Structural validation does not establish semantic truth or evidence freshness.
+Warning: Technical dependencies are declared, never evaluated or confirmed runtime dependencies.
+Warning: Missing observations can be excluded, unsupported or external; no source is fetched.
+Warning: Natural-language canonical claims are not interpreted; discrepancy detection is limited to normalization comparisons.

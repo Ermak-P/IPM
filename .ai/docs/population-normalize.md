@@ -139,5 +139,6 @@ It does not mean declarations are active dependencies, claims are semantically
 proven, conflicts are resolved, or proposals approved. Input failures and
 structural errors return exit 1; structurally valid review proposals return 0.
 
-Increment D, application, approval, rollback, graph construction and canonical
-mutation are not implemented.
+This normalization layer performs no application, approval, rollback, graph
+construction or canonical mutation. See population-apply.md for Increment D and
+graphs-and-reports.md for the separate Increment E derived views.

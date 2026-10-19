@@ -61,7 +61,10 @@ Increment C adds read-only v1 proposals and isolated validation through
 Increment D adds explicitly approved add-only population through
 `python -B .ai/tools/kb.py populate prepare --json`; see
 [approval, transaction states and recovery](docs/population-apply.md).
-The manifest lists pinned core capabilities; scan/extract/normalize/populate are optional CLI
+The manifest lists pinned core capabilities; scan/extract/normalize/populate/build/report are optional CLI
 extensions listed by --help, without a canonical format version change.
-Graph construction, RAG and integrations are not implemented. Population always
+Increment E adds disposable canonical and technical-preview graphs and reports:
+`python -B .ai/tools/kb.py build --json` and `python -B .ai/tools/kb.py report`;
+see [graph semantics and trust boundaries](docs/graphs-and-reports.md).
+RAG and integrations are not implemented. Population always
 requires exact-plan approval; it does not confirm claims. Canonical contracts remain v1.0.

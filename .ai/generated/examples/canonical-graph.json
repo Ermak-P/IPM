@@ -1,0 +1,317 @@
+{
+  "command": "build",
+  "graph": {
+    "authority": "validated-canonical-records",
+    "dependency_interpretation": "explicit-claim-dependencies-only",
+    "edges": [
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "evidence.example",
+        "id": "derived/edge.05575c2c1d08db2bba070ef9ea3b2297499121d471290dd4e15a2ae43ded8677",
+        "kind": "substantiates",
+        "metadata": {
+          "evidence_status": "active"
+        },
+        "provenance": [],
+        "source_references": [],
+        "supporting_claim_ids": [
+          "claim.example.reference"
+        ],
+        "supporting_evidence_ids": [
+          "evidence.example"
+        ],
+        "to": "claim.example.reference"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "claim.example.reference",
+        "id": "derived/edge.3353bf78c79333bff55a8b914e6a6ff5c52a4066036428f64ee253f76bc3ff11",
+        "kind": "depends_on",
+        "metadata": {
+          "semantics": "canonical-claim-relationship"
+        },
+        "provenance": [],
+        "source_references": [],
+        "supporting_claim_ids": [
+          "claim.example.project",
+          "claim.example.reference"
+        ],
+        "supporting_evidence_ids": [],
+        "to": "claim.example.project"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "claim.example.project",
+        "id": "derived/edge.41fedb55c3c6612018f05ca39b8e23fb31a20121fc34c8975cabde6167876c1f",
+        "kind": "has_provenance",
+        "metadata": {},
+        "provenance": [
+          {
+            "actor": "synthetic-fixture",
+            "method": "explicit-example-data-not-human-review"
+          }
+        ],
+        "source_references": [],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [],
+        "to": "derived/provenance.26bdcf62487ff7dba3d6dc3c8789f3586c97ef06b2276d7aa22c726bb6acf79f"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "evidence.example",
+        "id": "derived/edge.4347a338f873772a34d93ef7b6bd0d3bc30e13d6fe992a47ab88d36ed87d3ca6",
+        "kind": "has_provenance",
+        "metadata": {},
+        "provenance": [
+          {
+            "actor": "synthetic-fixture",
+            "method": "explicit-example-data-not-human-review"
+          }
+        ],
+        "source_references": [],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [],
+        "to": "derived/provenance.26bdcf62487ff7dba3d6dc3c8789f3586c97ef06b2276d7aa22c726bb6acf79f"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "evidence.example",
+        "id": "derived/edge.4b6456f975d141ee1c288b117e7a392856dc92114e6c437b0655064c2658f3e4",
+        "kind": "substantiates",
+        "metadata": {
+          "evidence_status": "active"
+        },
+        "provenance": [],
+        "source_references": [],
+        "supporting_claim_ids": [
+          "claim.example.project"
+        ],
+        "supporting_evidence_ids": [
+          "evidence.example"
+        ],
+        "to": "claim.example.project"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "evidence.example",
+        "id": "derived/edge.6cf7e81f4704bd734709d809067a416b180b96f75bff02bc1939fbe7b3c29b0a",
+        "kind": "references_source",
+        "metadata": {},
+        "provenance": [],
+        "source_references": [
+          {
+            "reference": "A.csproj"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [
+          "evidence.example"
+        ],
+        "to": "derived/source.19e533cfcba27118808d8bd49e0994f4fb13a5951a0f17535168e44464bc2399"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "claim.example.project",
+        "id": "derived/edge.729579b942786351ac4c38689c1116166e3101423541ff1866028aaaca405eb7",
+        "kind": "cites_evidence",
+        "metadata": {},
+        "provenance": [],
+        "source_references": [],
+        "supporting_claim_ids": [
+          "claim.example.project"
+        ],
+        "supporting_evidence_ids": [
+          "evidence.example"
+        ],
+        "to": "evidence.example"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "claim.example.reference",
+        "id": "derived/edge.7e2fe6911fe715cf66ad0e0c9786d372e084e8e2033a6036f71887af255f91fe",
+        "kind": "cites_evidence",
+        "metadata": {},
+        "provenance": [],
+        "source_references": [],
+        "supporting_claim_ids": [
+          "claim.example.reference"
+        ],
+        "supporting_evidence_ids": [
+          "evidence.example"
+        ],
+        "to": "evidence.example"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "claim.example.reference",
+        "id": "derived/edge.930ab49cc642d01b1e57f5966e37c6f0cd4dc29a937943601480d7a3ccfd8f16",
+        "kind": "has_provenance",
+        "metadata": {},
+        "provenance": [
+          {
+            "actor": "synthetic-fixture",
+            "method": "explicit-example-data-not-human-review"
+          }
+        ],
+        "source_references": [],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [],
+        "to": "derived/provenance.26bdcf62487ff7dba3d6dc3c8789f3586c97ef06b2276d7aa22c726bb6acf79f"
+      }
+    ],
+    "graph_version": "derived-graph-v1",
+    "nodes": [
+      {
+        "data": {
+          "conflicts_with": [],
+          "depends_on": [],
+          "evidence": [
+            "evidence.example"
+          ],
+          "id": "claim.example.project",
+          "last_verified": null,
+          "provenance": {
+            "actor": "synthetic-fixture",
+            "method": "explicit-example-data-not-human-review"
+          },
+          "statement": "Repository contains A.csproj.",
+          "status": "NEEDS_HUMAN_CONFIRMATION",
+          "type": "technical_fact"
+        },
+        "id": "claim.example.project",
+        "kind": "claim",
+        "provenance": [
+          {
+            "actor": "synthetic-fixture",
+            "method": "explicit-example-data-not-human-review"
+          }
+        ],
+        "source_references": [],
+        "supporting_claim_ids": [
+          "claim.example.project"
+        ],
+        "supporting_evidence_ids": []
+      },
+      {
+        "data": {
+          "conflicts_with": [],
+          "depends_on": [
+            "claim.example.project"
+          ],
+          "evidence": [
+            "evidence.example"
+          ],
+          "id": "claim.example.reference",
+          "last_verified": null,
+          "provenance": {
+            "actor": "synthetic-fixture",
+            "method": "explicit-example-data-not-human-review"
+          },
+          "statement": "A.csproj declares ProjectReference Include B.csproj.",
+          "status": "NEEDS_HUMAN_CONFIRMATION",
+          "type": "technical_fact"
+        },
+        "id": "claim.example.reference",
+        "kind": "claim",
+        "provenance": [
+          {
+            "actor": "synthetic-fixture",
+            "method": "explicit-example-data-not-human-review"
+          }
+        ],
+        "source_references": [],
+        "supporting_claim_ids": [
+          "claim.example.reference"
+        ],
+        "supporting_evidence_ids": []
+      },
+      {
+        "data": {
+          "actor": "synthetic-fixture",
+          "method": "explicit-example-data-not-human-review"
+        },
+        "id": "derived/provenance.26bdcf62487ff7dba3d6dc3c8789f3586c97ef06b2276d7aa22c726bb6acf79f",
+        "kind": "provenance",
+        "provenance": [],
+        "source_references": [],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": []
+      },
+      {
+        "data": {
+          "reference": "A.csproj"
+        },
+        "id": "derived/source.19e533cfcba27118808d8bd49e0994f4fb13a5951a0f17535168e44464bc2399",
+        "kind": "source_reference",
+        "provenance": [],
+        "source_references": [],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": []
+      },
+      {
+        "data": {
+          "captured_at": "2026-01-01T00:00:00Z",
+          "content_hash": "sha256:6da56ab16cf4d89148c424ce9df42c4f2284046383313c944f7ac6dda48eddb4",
+          "description": "Synthetic fixture declaration references; no copied source content.",
+          "id": "evidence.example",
+          "location": {
+            "reference": "A.csproj#/Project[1]"
+          },
+          "provenance": {
+            "actor": "synthetic-fixture",
+            "method": "explicit-example-data-not-human-review"
+          },
+          "source": "A.csproj",
+          "status": "active",
+          "substantiates": [
+            "claim.example.project",
+            "claim.example.reference"
+          ],
+          "type": "direct-technical"
+        },
+        "id": "evidence.example",
+        "kind": "evidence",
+        "provenance": [
+          {
+            "actor": "synthetic-fixture",
+            "method": "explicit-example-data-not-human-review"
+          }
+        ],
+        "source_references": [
+          {
+            "reference": "A.csproj"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [
+          "evidence.example"
+        ]
+      }
+    ],
+    "semantic_truth_established": false,
+    "view": "canonical"
+  },
+  "ok": true,
+  "validation": {
+    "errors": [],
+    "ok": true,
+    "record_counts": {
+      "claims": 2,
+      "evidence": 1,
+      "relationships": 0
+    },
+    "validator": "Contract v1 kb.validate",
+    "warnings": [
+      "Structural validation does not prove claim truth, source authority, or evidence freshness; human review is required."
+    ]
+  }
+}

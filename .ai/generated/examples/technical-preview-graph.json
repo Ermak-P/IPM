@@ -1,0 +1,444 @@
+{
+  "command": "build",
+  "graph": {
+    "authority": "noncanonical-technical-observation-preview",
+    "dependency_interpretation": "declared-not-evaluated; runtime-dependencies-unknown",
+    "edges": [
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "observed.solution.2552e13027d7e786b0766f87e5e14fedc43a1856bc2616ccdde413829c31756b",
+        "id": "derived/edge.1aeef5879816c4fe9971427057e6ecfb26952e5ceacfee8e05fd35a26aca9843",
+        "kind": "declared_solution_membership",
+        "metadata": {
+          "active_evaluated_dependency": "not-applicable",
+          "conditions": [],
+          "declared_value": {
+            "declared_path": "B.csproj"
+          },
+          "extraction_ids": [
+            "dotnet.39c7589d8784e2d75df747222207f645daf176a96f55ff93dc32392782243b8e"
+          ],
+          "interpretation": "declared-not-evaluated",
+          "proposed_claim_ids": [
+            "claim.dotnet.86b79bfe9edae1079ada17937f88710ff515f92bad1aed8239094d3897dfdfea.8dc7afd786afebf53cc3bcea3a7ae8c40f53ff41fa6d9d1604398e5d582c32b0"
+          ],
+          "proposed_evidence_ids": [
+            "evidence.dotnet.86b79bfe9edae1079ada17937f88710ff515f92bad1aed8239094d3897dfdfea.8dc7afd786afebf53cc3bcea3a7ae8c40f53ff41fa6d9d1604398e5d582c32b0"
+          ],
+          "resolution": "discovered"
+        },
+        "provenance": [
+          {
+            "actor": "dotnet-metadata-extractor",
+            "method": "static-xml-declaration-v1"
+          }
+        ],
+        "source_references": [
+          {
+            "content_hash": "sha256:658935a54f505f004ffb92ce382b689182e99183b36b82c163079ee09e4e4955",
+            "location": {
+              "column": 37,
+              "line": 1,
+              "selector": "/Solution[1]/Project[2]"
+            },
+            "provenance": {
+              "actor": "dotnet-metadata-extractor",
+              "method": "static-xml-declaration-v1"
+            },
+            "source": "Demo.slnx"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [],
+        "to": "observed.project.6b517394e807593324f940145c372cccd12950393bf767f319b1fd83a6796730"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "observed.project.19e533cfcba27118808d8bd49e0994f4fb13a5951a0f17535168e44464bc2399",
+        "id": "derived/edge.1d91398042868e8faa77a173c5d6c9a193eb514231df5ad347379e11f0c0aa37",
+        "kind": "declared_package_reference",
+        "metadata": {
+          "active_evaluated_dependency": "not-applicable",
+          "conditions": [],
+          "declared_value": {
+            "include": "Example"
+          },
+          "extraction_ids": [
+            "dotnet.6c3bd54211539fca41c31f92ad0f07318ca88355452badbd1f3f17187fcf673e"
+          ],
+          "interpretation": "declared-not-evaluated",
+          "proposed_claim_ids": [
+            "claim.dotnet.c5e7448f36f663b535789521f88ae37c1183106915571d9d7aa992d8499d2f9f.c7b9a3f7bc268e3bc85c6e31fdadef043c1dd07989dbd8705629447b574fa5d0"
+          ],
+          "proposed_evidence_ids": [
+            "evidence.dotnet.c5e7448f36f663b535789521f88ae37c1183106915571d9d7aa992d8499d2f9f.c7b9a3f7bc268e3bc85c6e31fdadef043c1dd07989dbd8705629447b574fa5d0"
+          ],
+          "resolution": "not-applicable"
+        },
+        "provenance": [
+          {
+            "actor": "dotnet-metadata-extractor",
+            "method": "static-xml-declaration-v1"
+          }
+        ],
+        "source_references": [
+          {
+            "content_hash": "sha256:6da56ab16cf4d89148c424ce9df42c4f2284046383313c944f7ac6dda48eddb4",
+            "location": {
+              "column": 132,
+              "line": 1,
+              "selector": "/Project[1]/ItemGroup[1]/PackageReference[1]"
+            },
+            "provenance": {
+              "actor": "dotnet-metadata-extractor",
+              "method": "static-xml-declaration-v1"
+            },
+            "source": "A.csproj"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [],
+        "to": "observed.package.c6b2ce7837f7d3f4dc09849711ca94ef7d83fdc6d39014a5607305c55b33bea4"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "observed.project.19e533cfcba27118808d8bd49e0994f4fb13a5951a0f17535168e44464bc2399",
+        "id": "derived/edge.3c0d43d5e1d04ff21a0ce9d80ff5a97273567636fb6b889c169b04e92158fbde",
+        "kind": "declared_project_property",
+        "metadata": {
+          "active_evaluated_dependency": "not-applicable",
+          "conditions": [],
+          "declared_value": {
+            "declared": "net10.0",
+            "name": "TargetFramework"
+          },
+          "extraction_ids": [
+            "dotnet.2df6b22c43c3795d37d9f69d4893e01929109e0a42448587fbcc37f0c4439c9b"
+          ],
+          "interpretation": "declared-not-evaluated",
+          "proposed_claim_ids": [
+            "claim.dotnet.d13d9aa406fd16b062eb17702805c6b48a2aabb7d257aeed5f7563f85b40e324.30ad739d37a3e369d64f79fb866a50e790cc21cd9268fab80e45aa666b2b4080"
+          ],
+          "proposed_evidence_ids": [
+            "evidence.dotnet.d13d9aa406fd16b062eb17702805c6b48a2aabb7d257aeed5f7563f85b40e324.30ad739d37a3e369d64f79fb866a50e790cc21cd9268fab80e45aa666b2b4080"
+          ],
+          "resolution": "not-applicable"
+        },
+        "provenance": [
+          {
+            "actor": "dotnet-metadata-extractor",
+            "method": "static-xml-declaration-v1"
+          }
+        ],
+        "source_references": [
+          {
+            "content_hash": "sha256:6da56ab16cf4d89148c424ce9df42c4f2284046383313c944f7ac6dda48eddb4",
+            "location": {
+              "column": 25,
+              "line": 1,
+              "selector": "/Project[1]/PropertyGroup[1]/TargetFramework[1]"
+            },
+            "provenance": {
+              "actor": "dotnet-metadata-extractor",
+              "method": "static-xml-declaration-v1"
+            },
+            "source": "A.csproj"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [],
+        "to": "observed.property.ae37652893ba58bd680a9ed1814f859ad77512de35bcd887a35555e9ec0e10b8"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "observed.project.19e533cfcba27118808d8bd49e0994f4fb13a5951a0f17535168e44464bc2399",
+        "id": "derived/edge.679eeeefb4672a0c96dcc2e8c2a162cbec677fdc1638c82d4d27da64217e0b93",
+        "kind": "declared_project_reference",
+        "metadata": {
+          "active_evaluated_dependency": "unknown",
+          "conditions": [],
+          "declared_value": {
+            "include": "B.csproj"
+          },
+          "extraction_ids": [
+            "dotnet.73af8fda56acbbd5e1a2c5ee0cfc5ddff90bc211e10c66da2debc74eb7b77c96"
+          ],
+          "interpretation": "declared-not-evaluated",
+          "proposed_claim_ids": [
+            "claim.dotnet.1bd0757a213be451033721c3e4d647835017f7835727e056a104b9851935ea30.d941d75b07df7811d66f4f7e7071672109636db61695bc52bf3d404fd852d14c"
+          ],
+          "proposed_evidence_ids": [
+            "evidence.dotnet.1bd0757a213be451033721c3e4d647835017f7835727e056a104b9851935ea30.d941d75b07df7811d66f4f7e7071672109636db61695bc52bf3d404fd852d14c"
+          ],
+          "resolution": "discovered"
+        },
+        "provenance": [
+          {
+            "actor": "dotnet-metadata-extractor",
+            "method": "static-xml-declaration-v1"
+          }
+        ],
+        "source_references": [
+          {
+            "content_hash": "sha256:6da56ab16cf4d89148c424ce9df42c4f2284046383313c944f7ac6dda48eddb4",
+            "location": {
+              "column": 94,
+              "line": 1,
+              "selector": "/Project[1]/ItemGroup[1]/ProjectReference[1]"
+            },
+            "provenance": {
+              "actor": "dotnet-metadata-extractor",
+              "method": "static-xml-declaration-v1"
+            },
+            "source": "A.csproj"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [],
+        "to": "observed.project.6b517394e807593324f940145c372cccd12950393bf767f319b1fd83a6796730"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "observed.project.19e533cfcba27118808d8bd49e0994f4fb13a5951a0f17535168e44464bc2399",
+        "id": "derived/edge.7faa41902bce80b772c6934b94212338e34cf29be59da41725de04c244eaf9b4",
+        "kind": "declared_package_version",
+        "metadata": {
+          "active_evaluated_dependency": "not-applicable",
+          "conditions": [],
+          "declared_value": {
+            "declared": "1.2.3",
+            "include": "Example",
+            "name": "Version"
+          },
+          "extraction_ids": [
+            "dotnet.1669e34a8a4451448997f91a29158fd89621e97e7bf69f389e64e9c723acef95"
+          ],
+          "interpretation": "declared-not-evaluated",
+          "proposed_claim_ids": [
+            "claim.dotnet.774f119584d2ae98e97867cdd9a2d44dc92c0d7738c22fc3f91b4e887296dc78.ba9f502196759872dcdab382680ac3e5d68cdca583753b7ce810cb6650553d6d"
+          ],
+          "proposed_evidence_ids": [
+            "evidence.dotnet.774f119584d2ae98e97867cdd9a2d44dc92c0d7738c22fc3f91b4e887296dc78.ba9f502196759872dcdab382680ac3e5d68cdca583753b7ce810cb6650553d6d"
+          ],
+          "resolution": "not-applicable"
+        },
+        "provenance": [
+          {
+            "actor": "dotnet-metadata-extractor",
+            "method": "static-xml-declaration-v1"
+          }
+        ],
+        "source_references": [
+          {
+            "content_hash": "sha256:6da56ab16cf4d89148c424ce9df42c4f2284046383313c944f7ac6dda48eddb4",
+            "location": {
+              "column": 132,
+              "line": 1,
+              "selector": "/Project[1]/ItemGroup[1]/PackageReference[1]"
+            },
+            "provenance": {
+              "actor": "dotnet-metadata-extractor",
+              "method": "static-xml-declaration-v1"
+            },
+            "source": "A.csproj"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [],
+        "to": "observed.package.c6b2ce7837f7d3f4dc09849711ca94ef7d83fdc6d39014a5607305c55b33bea4"
+      },
+      {
+        "canonical_relationship_ids": [],
+        "directed": true,
+        "from": "observed.solution.2552e13027d7e786b0766f87e5e14fedc43a1856bc2616ccdde413829c31756b",
+        "id": "derived/edge.98d08a7f7f317c5eb16d2402299d3c56b5b7320a5413af447109a39503753af5",
+        "kind": "declared_solution_membership",
+        "metadata": {
+          "active_evaluated_dependency": "not-applicable",
+          "conditions": [],
+          "declared_value": {
+            "declared_path": "A.csproj"
+          },
+          "extraction_ids": [
+            "dotnet.e5ea8368cd10eb0f9fc52d157ea3eed9ded175fdc169b52944c20945e0c63f77"
+          ],
+          "interpretation": "declared-not-evaluated",
+          "proposed_claim_ids": [
+            "claim.dotnet.ef75dd8ea4e2bb8355ff5f05e2a15c7ffa6944e8561436e3b75ae3e1f4580d61.186f7395a3d1f1a4ad66fb9cb71e1ff53a95a1bbb956d276c47ec73fa228e164"
+          ],
+          "proposed_evidence_ids": [
+            "evidence.dotnet.ef75dd8ea4e2bb8355ff5f05e2a15c7ffa6944e8561436e3b75ae3e1f4580d61.186f7395a3d1f1a4ad66fb9cb71e1ff53a95a1bbb956d276c47ec73fa228e164"
+          ],
+          "resolution": "discovered"
+        },
+        "provenance": [
+          {
+            "actor": "dotnet-metadata-extractor",
+            "method": "static-xml-declaration-v1"
+          }
+        ],
+        "source_references": [
+          {
+            "content_hash": "sha256:658935a54f505f004ffb92ce382b689182e99183b36b82c163079ee09e4e4955",
+            "location": {
+              "column": 11,
+              "line": 1,
+              "selector": "/Solution[1]/Project[1]"
+            },
+            "provenance": {
+              "actor": "dotnet-metadata-extractor",
+              "method": "static-xml-declaration-v1"
+            },
+            "source": "Demo.slnx"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": [],
+        "to": "observed.project.19e533cfcba27118808d8bd49e0994f4fb13a5951a0f17535168e44464bc2399"
+      }
+    ],
+    "graph_version": "derived-graph-v1",
+    "nodes": [
+      {
+        "data": {
+          "availability": "unknown",
+          "include": "Example"
+        },
+        "id": "observed.package.c6b2ce7837f7d3f4dc09849711ca94ef7d83fdc6d39014a5607305c55b33bea4",
+        "kind": "declared_package",
+        "provenance": [],
+        "source_references": [],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": []
+      },
+      {
+        "data": {
+          "existence": "observed-file",
+          "name": "A",
+          "name_origin": "filename",
+          "path": "A.csproj"
+        },
+        "id": "observed.project.19e533cfcba27118808d8bd49e0994f4fb13a5951a0f17535168e44464bc2399",
+        "kind": "observed_project",
+        "proposed_claim_ids": [
+          "claim.dotnet.45d19490fa369f1d83801d89224b26c74af64e827ebd6a5cd4558dfc235c4d1a.2e66dcac0d9b7e8f548f3b9b349c0cf7a45e5558be170bdb972f118967d924e5"
+        ],
+        "proposed_evidence_ids": [
+          "evidence.dotnet.45d19490fa369f1d83801d89224b26c74af64e827ebd6a5cd4558dfc235c4d1a.2e66dcac0d9b7e8f548f3b9b349c0cf7a45e5558be170bdb972f118967d924e5"
+        ],
+        "provenance": [
+          {
+            "actor": "dotnet-metadata-extractor",
+            "method": "static-xml-declaration-v1"
+          }
+        ],
+        "source_references": [
+          {
+            "content_hash": "sha256:6da56ab16cf4d89148c424ce9df42c4f2284046383313c944f7ac6dda48eddb4",
+            "location": {
+              "column": 1,
+              "line": 1,
+              "selector": "/Project[1]"
+            },
+            "provenance": {
+              "actor": "dotnet-metadata-extractor",
+              "method": "static-xml-declaration-v1"
+            },
+            "source": "A.csproj"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": []
+      },
+      {
+        "data": {
+          "existence": "observed-file",
+          "name": "B",
+          "name_origin": "filename",
+          "path": "B.csproj"
+        },
+        "id": "observed.project.6b517394e807593324f940145c372cccd12950393bf767f319b1fd83a6796730",
+        "kind": "observed_project",
+        "proposed_claim_ids": [
+          "claim.dotnet.a82412fab8367263d85bbd7c29e0412c41d6da742e3506f41432589bf3f30bec.6de02b5d8286c660682b6b9ab38e93442f1dc2007659f03143e406dd201d43fe"
+        ],
+        "proposed_evidence_ids": [
+          "evidence.dotnet.a82412fab8367263d85bbd7c29e0412c41d6da742e3506f41432589bf3f30bec.6de02b5d8286c660682b6b9ab38e93442f1dc2007659f03143e406dd201d43fe"
+        ],
+        "provenance": [
+          {
+            "actor": "dotnet-metadata-extractor",
+            "method": "static-xml-declaration-v1"
+          }
+        ],
+        "source_references": [
+          {
+            "content_hash": "sha256:4fd24be83f7dd636f6e2e8f456dfa559f1ca9c7346e1d10a5358db346b1300b9",
+            "location": {
+              "column": 1,
+              "line": 1,
+              "selector": "/Project[1]"
+            },
+            "provenance": {
+              "actor": "dotnet-metadata-extractor",
+              "method": "static-xml-declaration-v1"
+            },
+            "source": "B.csproj"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": []
+      },
+      {
+        "data": {
+          "declared": "net10.0",
+          "name": "TargetFramework"
+        },
+        "id": "observed.property.ae37652893ba58bd680a9ed1814f859ad77512de35bcd887a35555e9ec0e10b8",
+        "kind": "target_framework_declaration",
+        "provenance": [],
+        "source_references": [],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": []
+      },
+      {
+        "data": {
+          "existence": "inventory-file",
+          "path": "Demo.slnx"
+        },
+        "id": "observed.solution.2552e13027d7e786b0766f87e5e14fedc43a1856bc2616ccdde413829c31756b",
+        "kind": "observed_solution",
+        "provenance": [],
+        "source_references": [
+          {
+            "method": "scanner-inventory",
+            "source": "Demo.slnx"
+          }
+        ],
+        "supporting_claim_ids": [],
+        "supporting_evidence_ids": []
+      }
+    ],
+    "semantic_truth_established": false,
+    "view": "technical-preview"
+  },
+  "ok": true,
+  "validation": {
+    "errors": [],
+    "ok": true,
+    "record_counts": {
+      "claims": 2,
+      "evidence": 1,
+      "relationships": 0
+    },
+    "validator": "Contract v1 kb.validate",
+    "warnings": [
+      "Structural validation does not prove claim truth, source authority, or evidence freshness; human review is required."
+    ]
+  }
+}
