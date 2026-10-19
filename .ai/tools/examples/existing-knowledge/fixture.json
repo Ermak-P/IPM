@@ -1,0 +1,25 @@
+{
+  "files": {
+    ".ai/README.md": "# Harbor Tickets architecture knowledge\nSynthetic pre-existing team-owned knowledge. Rules, evidence and graph tooling are maintained by this fictional project. No framework owns these paths.\n",
+    ".ai/business/concepts.yaml": "concepts:\n  - key: Ticket\n    meaning: A fictional request for harbor access.\n  - key: Closure\n    meaning: A fictional completion state.\n",
+    ".ai/evidence/review.json": "{\n  \"id\": \"EV/17\",\n  \"kind\": \"meeting-note\",\n  \"state\": \"current\",\n  \"uri\": \"knowledge/decisions/ADR-017.md\",\n  \"reviewer\": \"fictional-policy-owner\",\n  \"excerpt_ref\": \"Reopening policy\",\n  \"observed_on\": \"2026-01-10\"\n}\n",
+    ".ai/evidence/source.json": "{\n  \"id\": \"EV/18\",\n  \"kind\": \"source-code\",\n  \"state\": \"withdrawn\",\n  \"uri\": \"../src/TicketHub.cs\",\n  \"observed_on\": \"unknown\",\n  \"supports\": [\n    \"ARCH/4\"\n  ]\n}\n",
+    ".ai/generated/architecture.json": "{\n  \"fixture_only\": true,\n  \"nodes\": [\n    {\n      \"id\": \"TicketHub\",\n      \"kind\": \"component\"\n    },\n    {\n      \"id\": \"AuditWriter\",\n      \"kind\": \"component\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"source\": \"TicketHub\",\n      \"target\": \"AuditWriter\",\n      \"kind\": \"calls\"\n    }\n  ]\n}\n",
+    ".ai/generated/curator-notes.md": "# Legacy curator notes\nThis fictional legacy team accidentally stores irreplaceable review notes under generated/. Do not assume this directory is disposable during integration.\n",
+    ".ai/knowledge/claims/architecture.json": "{\n  \"id\": \"ARCH/4\",\n  \"kind\": \"component-responsibility\",\n  \"text\": \"TicketHub owns ticket state transitions.\",\n  \"state\": \"verified\",\n  \"confidence\": 0.9,\n  \"support\": [\n    \"EV/18\"\n  ],\n  \"reviewed_by\": \"fictional-architect\"\n}\n",
+    ".ai/knowledge/claims/rule.json": "{\n  \"id\": \"RULE/17\",\n  \"kind\": \"business-policy\",\n  \"text\": \"A closed ticket may be reopened only by a supervisor.\",\n  \"state\": \"approved\",\n  \"support\": [\n    \"EV/17\"\n  ],\n  \"reviewed_by\": \"fictional-policy-owner\",\n  \"reviewed_on\": \"2026-01-10\",\n  \"tags\": [\n    \"ticketing\"\n  ]\n}\n",
+    ".ai/knowledge/decisions/ADR-017.md": "# ADR-017 \u2014 Reopening policy\nStatus: accepted (synthetic fixture metadata).\nA supervisor may authorize reopening. This text has no signed or independently authenticated approval receipt.\n",
+    ".ai/knowledge/domains/ticketing.md": "# Ticketing domain\nTicket and Closure are project-owned concepts. An approved glossary is not automatically a canonical business-rule claim.\n",
+    ".ai/knowledge/relationships/component.json": "{\n  \"id\": \"EDGE/4\",\n  \"kind\": \"calls\",\n  \"source\": \"TicketHub\",\n  \"target\": \"AuditWriter\",\n  \"conditional\": true\n}\n",
+    ".ai/manifest.yaml": "{\n  \"format\": \"harbor-team-architecture\",\n  \"revision\": 3,\n  \"knowledge_owner\": \"harbor-architecture-team\",\n  \"graph_builder\": \"tools/knowledge_graph.py\"\n}\n",
+    ".ai/schema/claim.schema.json": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"type\": \"object\",\n  \"required\": [\n    \"id\",\n    \"kind\",\n    \"text\",\n    \"state\"\n  ],\n  \"additionalProperties\": true\n}\n",
+    ".ai/sources/access.md": "# Source access\nReview documents are local. Do not fetch external resources or infer approver authority.\n",
+    ".ai/state/team-decisions.md": "# Legacy ownership exception\nThis fictional team stores a durable decision under state/. Classification requires human review, never relocation by an inventory tool.\n",
+    ".ai/tools/graph-contract.json": "{\n  \"owner\": \"harbor-architecture-team\",\n  \"entrypoint\": \"tools/knowledge_graph.py\",\n  \"inputs\": [\n    \"knowledge/claims\",\n    \"knowledge/relationships\",\n    \"knowledge/domains\"\n  ],\n  \"output\": \"generated/architecture.json\",\n  \"semantics\": \"component calls and approved team assertions; not v1 claim dependencies\",\n  \"implementation\": \"not supplied; ownership sentinel only\"\n}\n",
+    ".ai/tools/knowledge_graph.py": "\"\"\"INERT SYNTHETIC OWNERSHIP SENTINEL, not an executable Graph Builder.\nRepresents the pre-existing team-owned graph entry point at this exact path.\nIts implementation is intentionally omitted; never import or run this fixture.\n\"\"\"\n",
+    "host.txt": "Synthetic host sentinel; preserve these bytes.\n",
+    "src/TicketHub/TicketHub.csproj": "<Project Sdk=\"Microsoft.NET.Sdk\"><PropertyGroup><TargetFramework>net10.0</TargetFramework></PropertyGroup></Project>\n"
+  },
+  "fixture": "Harbor Tickets \u2014 entirely fictional pre-existing architecture knowledge",
+  "purpose": "Assessment only; file bundle is not installed canonical knowledge, a migration adapter or a Graph Builder implementation."
+}
