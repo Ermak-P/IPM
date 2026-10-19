@@ -1,0 +1,91 @@
+{
+  "baseline_commit": "27f9aa69004ce769f19e6cdc58f697db9cb36515",
+  "baseline_tests": {
+    "dotnet_passed": 27,
+    "failed": 0,
+    "python_passed": 159
+  },
+  "canonical_schema_source_metadata_files_unchanged": 10,
+  "checks": [
+    {
+      "command": "python -B .ai/tools/kb.py validate --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py check-scaffold --json",
+      "exit_code": 0
+    },
+    {
+      "command": "python -B .ai/tools/kb.py version --json",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "core_validator_and_canonical_json_parser_unchanged": true,
+  "cp_python_backend_sources_inspected": [
+    "https://github.com/python/cpython/blob/v3.12.14/PC/msvcrtmodule.c",
+    "https://github.com/python/cpython/blob/v3.12.14/Modules/posixmodule.c"
+  ],
+  "dotnet_tests": {
+    "command": "/workspace/.ipm-tools/dotnet/dotnet vstest tests/SyntheticIpm.UnitTests/bin/Debug/net10.0/SyntheticIpm.UnitTests.dll tests/SyntheticIpm.IntegrationTests/bin/Debug/net10.0/SyntheticIpm.IntegrationTests.dll --ResultsDirectory:/tmp/ipm-increment-d1-tests",
+    "failed": 0,
+    "note": "Existing Linux assemblies; no restore/build",
+    "passed": 27,
+    "skipped": 0
+  },
+  "execution_platform": "Linux CPython 3.12.14",
+  "host_files_sha256_unchanged": 1148,
+  "implemented_fixes": [
+    {
+      "id": "D1-01",
+      "issue": "Repeated recovery after missing commit journal could remove committed records; includes legacy ambiguous marker",
+      "severity": "high"
+    },
+    {
+      "id": "D1-02",
+      "issue": "Control JSON reopened after file validation",
+      "severity": "medium"
+    },
+    {
+      "id": "D1-03",
+      "issue": "Coordinator descriptor leaked if Windows unlock raised",
+      "severity": "medium"
+    },
+    {
+      "id": "D1-04",
+      "issue": "Final source observation allowed an unobserved canonical edit before commit",
+      "severity": "medium"
+    }
+  ],
+  "increment": "D.1 focused portability and safety review",
+  "increment_e_started": false,
+  "mocked_windows_tests_in_python_total": 3,
+  "native_windows_11_ntfs": "NOT EXECUTED; separate checklist required",
+  "python_tests": {
+    "command": "python -B -m unittest discover -s .ai/tools/tests -p 'test_*.py'",
+    "errors": 0,
+    "failed": 0,
+    "modules": {
+      "test_acceptance": 28,
+      "test_extract": 28,
+      "test_normalize": 35,
+      "test_population": 63,
+      "test_scan": 15
+    },
+    "passed": 169,
+    "skipped": 0
+  },
+  "real_repository_canonical_population_performed": false,
+  "real_repository_transactions": [],
+  "remaining_risks": [
+    "Native NTFS/CRT behavior not executed",
+    "External writers ignoring coordination and hostile path swaps",
+    "External sharing/ACL/AV interference",
+    "No multi-file atomicity or Windows power-loss guarantee"
+  ],
+  "reproduced_regression_failures_before_fix": 5,
+  "simulated_windows_sharing_failure": "Portable PermissionError injection, not native sharing verification"
+}

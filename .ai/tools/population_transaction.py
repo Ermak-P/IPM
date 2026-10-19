@@ -86,9 +86,20 @@ def read_bytes(path, single_link=True):
 
 
 def read_json(path):
-    # Reuse core duplicate-key/NaN rejection after checking the object type.
-    read_bytes(path)
-    return kb.read_json(path)
+    # Parse the checked snapshot, never reopen a potentially replaced path.
+    # Keep the core JSON restrictions without changing its canonical validator.
+    def pairs(items):
+        result = {}
+        for key, value in items:
+            require(key not in result, 'duplicate-control-json-key')
+            result[key] = value
+        return result
+
+    def invalid_constant(value):
+        raise PopulationError('nonfinite-control-json-number')
+
+    return json.loads(read_bytes(path).decode('utf-8'), object_pairs_hook=pairs,
+                      parse_constant=invalid_constant)
 
 
 def sync_directory(path):
@@ -184,15 +195,17 @@ class PopulationStore:
                 sync_directory(path.parent)
             yield
         finally:
-            if locked:
-                if os.name == 'nt':
-                    import msvcrt
-                    os.lseek(fd, 0, os.SEEK_SET)
-                    msvcrt.locking(fd, msvcrt.LK_UNLCK, 1)
-                else:
-                    import fcntl
-                    fcntl.flock(fd, fcntl.LOCK_UN)
-            os.close(fd)
+            try:
+                if locked:
+                    if os.name == 'nt':
+                        import msvcrt
+                        os.lseek(fd, 0, os.SEEK_SET)
+                        msvcrt.locking(fd, msvcrt.LK_UNLCK, 1)
+                    else:
+                        import fcntl
+                        fcntl.flock(fd, fcntl.LOCK_UN)
+            finally:
+                os.close(fd)
 
     def canonical_snapshot(self, ignore=()):
         self.safe_tree()
@@ -504,6 +517,10 @@ class PopulationStore:
                 require(not errors, 'installed-dataset-validation-failed')
                 require(self.observe(plan['sources']['exclusions'])[1] == plan['sources'],
                         'source-changed-before-commit')
+                # Source observation can be slow; do not commit an earlier canonical view.
+                self.check_installed(plan, require_owned=True)
+                require(self.canonical_snapshot(op['path'] for op in plan['eligible']) == plan['canonical'],
+                        'concurrent-canonical-edit-before-commit')
                 self.transition(identifier, 'COMMITTED', installed=len(plan['eligible']))
                 _checkpoint('after_commit')
                 self.clear_stage(plan, committed=True)
@@ -544,9 +561,12 @@ class PopulationStore:
             plan = self.load_plan(identifier)
             journal = self.journal(identifier)
             require(journal is not None, 'no-transaction-to-recover')
-            if journal['state'] == 'ORPHANED' and any(
+            started = any(isinstance(event, dict) and event.get('state') == 'STAGING'
+                          for event in journal.get('history', []))
+            if journal['state'] not in TERMINAL and not started and any(
                     (self.base / op['path']).exists() for op in plan['eligible']):
-                self.transition(identifier, 'RECOVERY_REQUIRED')
+                # No journal proof that these are uncommitted additions. Never turn
+                # this ambiguity into an ordinary rollback on a subsequent retry.
                 raise PopulationError('missing-journal-with-existing-targets-preserve-and-review')
             if journal['state'] == 'COMMITTED':
                 self.check_installed(plan)

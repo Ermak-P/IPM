@@ -6,11 +6,13 @@ import socket
 import subprocess
 import sys
 import tempfile
+from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import kb
+import population_transaction as transaction
 from population_normalize import load_canonical
 from population_transaction import (PopulationError, PopulationStore, encoded, seal,
                                     sha, write_new, guard_normal_operation, normal_operation)
@@ -678,6 +680,178 @@ tx.PopulationStore(sys.argv[2]).apply(sys.argv[3], sys.argv[3])
         result = cli('apply', '--plan', plan['fingerprint'], '--approve', plan['fingerprint'])
         self.assertEqual(result['state'], 'COMMITTED')
         self.assertFalse(kb.validate(self.root / '.ai')[0])
+
+    def test_repeated_recovery_never_demotes_ambiguous_commit_to_rollback(self):
+        plan = self.prepare()
+        self.interrupt(plan, 'after_commit')
+        before = self.canonical()
+        (self.store.transaction_path(plan['fingerprint']) / 'journal.json').unlink()
+        rejected = []
+        for _ in range(2):
+            try:
+                self.store.recover(plan['fingerprint'])
+                rejected.append(False)
+            except PopulationError:
+                rejected.append(True)
+        self.assertEqual(before, self.canonical())
+        self.assertEqual(rejected, [True, True])
+        self.assertTrue(self.store.status()['recovery_required'])
+
+    def test_legacy_ambiguous_recovery_marker_cannot_delete_committed_records(self):
+        plan = self.prepare()
+        self.interrupt(plan, 'after_commit')
+        before = self.canonical()
+        # Exact shape produced by baseline D after a missing-journal recovery.
+        marker = seal({'plan': plan['fingerprint'], 'state': 'RECOVERY_REQUIRED',
+                       'attempt': 1, 'installed': 0,
+                       'history': [{'state': 'RECOVERY_REQUIRED', 'at': '2000-01-01T00:00:00Z'}]})
+        path = self.store.transaction_path(plan['fingerprint']) / 'journal.json'
+        path.write_bytes(encoded(marker))
+        with self.assertRaisesRegex(PopulationError, 'missing-journal'):
+            self.store.recover(plan['fingerprint'])
+        self.assertEqual(before, self.canonical())
+
+    def test_control_json_is_parsed_from_the_checked_byte_snapshot(self):
+        path = self.write('.ai/state/control.json', '{"checked":true}')
+        original = transaction.read_bytes
+        def change_after_read(name, *args, **kwargs):
+            data = original(name, *args, **kwargs)
+            path.write_text('{"unchecked_replacement":true}', encoding='utf-8')
+            return data
+        with patch('population_transaction.read_bytes', side_effect=change_after_read):
+            result = transaction.read_json(path)
+        self.assertEqual(result, {'checked': True})
+
+    def test_mock_windows_unlock_failure_still_closes_descriptor(self):
+        self.prepare()  # Existing persistent coordinator; no native Windows claim.
+        facade = SimpleNamespace(**vars(os))
+        facade.name = 'nt'
+        closed, descriptors = [], []
+        def close(fd):
+            closed.append(fd)
+            os.close(fd)
+        facade.close = close
+        def locking(fd, mode, count):
+            descriptors.append(fd)
+            self.assertEqual(os.lseek(fd, 0, os.SEEK_CUR), 0)
+            self.assertEqual(count, 1)
+            if mode == 2:
+                raise OSError('simulated Windows unlock failure')
+        fake = SimpleNamespace(LK_NBLCK=1, LK_UNLCK=2, locking=locking)
+        try:
+            with patch('population_transaction.os', facade), patch.dict(sys.modules, {'msvcrt': fake}):
+                with self.assertRaises(OSError):
+                    with self.store.coordinate():
+                        os.lseek(descriptors[0], 1, os.SEEK_SET)
+            self.assertEqual(closed, [descriptors[0]])
+        finally:
+            if descriptors and descriptors[0] not in closed:
+                os.close(descriptors[0])
+
+    def test_external_canonical_edit_during_final_observation_is_not_committed(self):
+        note = self.write('.ai/knowledge/decisions/note.md', 'original')
+        plan = self.prepare()
+        original = self.store.observe
+        def observe(*args, **kwargs):
+            result = original(*args, **kwargs)
+            journal = self.store.journal(plan['fingerprint'])
+            if journal and journal['state'] == 'INSTALLING' and journal['installed'] == len(plan['eligible']):
+                note.write_text('concurrent final-observation edit', encoding='utf-8')
+            return result
+        with patch.object(self.store, 'observe', side_effect=observe):
+            with self.assertRaises(PopulationError):
+                self.apply(plan)
+        self.assertEqual(note.read_text(), 'concurrent final-observation edit')
+        self.assertFalse(load_canonical(self.root / '.ai')['claims'])
+        self.assertEqual(self.store.journal(plan['fingerprint'])['state'], 'RECOVERY_REQUIRED')
+
+    def test_mock_windows_locks_byte_zero_and_closes_after_unlock(self):
+        facade = SimpleNamespace(**vars(os))
+        facade.name = 'nt'
+        calls = []
+        def locking(fd, mode, count):
+            calls.append((fd, mode, count, os.lseek(fd, 0, os.SEEK_CUR)))
+        fake = SimpleNamespace(LK_NBLCK=1, LK_UNLCK=2, locking=locking)
+        with patch('population_transaction.os', facade), patch.dict(sys.modules, {'msvcrt': fake}):
+            with self.store.coordinate(create=True):
+                self.assertEqual((self.store.state / 'coordination.lock').read_bytes(), b'0')
+                os.lseek(calls[0][0], 1, os.SEEK_SET)
+        self.assertEqual([(mode, count, offset) for _, mode, count, offset in calls],
+                         [(1, 1, 0), (2, 1, 0)])
+        with self.assertRaises(OSError):
+            os.fstat(calls[0][0])
+
+    def test_mock_windows_lock_acquisition_failure_closes_descriptor(self):
+        self.prepare()
+        facade = SimpleNamespace(**vars(os))
+        facade.name = 'nt'
+        opened = []
+        def locking(fd, mode, count):
+            opened.append(fd)
+            raise OSError('simulated sharing/locking conflict')
+        fake = SimpleNamespace(LK_NBLCK=1, LK_UNLCK=2, locking=locking)
+        with patch('population_transaction.os', facade), patch.dict(sys.modules, {'msvcrt': fake}):
+            with self.assertRaisesRegex(PopulationError, 'population-busy'):
+                with self.store.coordinate():
+                    self.fail('lock must not be acquired')
+        self.assertEqual(len(opened), 1)
+        with self.assertRaises(OSError):
+            os.fstat(opened[0])
+
+    def test_control_json_keeps_duplicate_key_and_nonfinite_number_rejection(self):
+        for content in ['{"x":1,"x":2}', '{"x":NaN}', '{"x":Infinity}', '{"x":-Infinity}']:
+            with self.subTest(content=content):
+                path = self.write('.ai/state/control.json', content)
+                with self.assertRaises(ValueError):
+                    transaction.read_json(path)
+
+    def test_own_write_handles_are_closed_before_link_and_journal_replace(self):
+        plan = self.prepare()
+        original_open, original_link, original_replace = os.open, os.link, os.replace
+        descriptors = {}
+        counts = {'link': 0, 'replace': 0}
+        def tracked_open(path, flags, *args, **kwargs):
+            fd = original_open(path, flags, *args, **kwargs)
+            if flags & os.O_EXCL:
+                descriptors[Path(path)] = fd
+            return fd
+        def assert_closed(path):
+            with self.assertRaises(OSError):
+                os.fstat(descriptors[Path(path)])
+        def link(source, target, **kwargs):
+            assert_closed(source)
+            counts['link'] += 1
+            return original_link(source, target, **kwargs)
+        def replace(source, target):
+            assert_closed(source)
+            counts['replace'] += 1
+            return original_replace(source, target)
+        with patch('population_transaction.os.open', side_effect=tracked_open), \
+                patch('population_transaction.os.link', side_effect=link), \
+                patch('population_transaction.os.replace', side_effect=replace):
+            self.apply(plan)
+        self.assertEqual(counts['link'], len(plan['eligible']))
+        self.assertGreater(counts['replace'], 1)
+
+    def test_persistent_replace_sharing_failure_remains_recoverable_after_release(self):
+        plan = self.prepare()
+        before = self.canonical()
+        original = os.replace
+        failed = False
+        def sharing_failure(source, target):
+            nonlocal failed
+            data = json.loads(Path(source).read_text(encoding='utf-8'))
+            if data['state'] == 'INSTALLING' and data['installed'] == 1:
+                failed = True
+            if failed:
+                raise PermissionError('simulated Windows delete-sharing denial')
+            return original(source, target)
+        with patch('population_transaction.os.replace', side_effect=sharing_failure):
+            with self.assertRaises(PermissionError):
+                self.apply(plan)
+        self.assertTrue(self.store.status()['recovery_required'])
+        self.assertEqual(self.store.recover(plan['fingerprint'])['state'], 'ROLLED_BACK')
+        self.assertEqual(before, self.canonical())
 
 
 if __name__ == '__main__':

@@ -30,6 +30,7 @@ FILES += ['tools/population_dotnet.py', 'tools/tests/test_extract.py', 'docs/pop
 FILES += ['tools/population_normalize.py', 'tools/tests/test_normalize.py', 'docs/population-normalize.md']
 FILES += ['tools/population_transaction.py', 'tools/tests/test_population.py', 'docs/population-apply.md']
 FILES += ['.gitignore']
+FILES += ['docs/transaction-review-d1.md', 'docs/windows11-ntfs-checklist.md']
 PLACEHOLDERS = [directory + '/.gitkeep' for directory in DIRECTORIES
                 if directory not in ['schema', 'docs', 'tools', 'tools/tests', 'tools/examples']]
 SOURCE = Path(__file__).resolve().parents[1]

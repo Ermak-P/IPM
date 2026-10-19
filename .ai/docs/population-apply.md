@@ -91,6 +91,8 @@ ORPHANED and recoverable. Every journal update uses an fsynced temporary file,
 atomic replacement of internal journal metadata, and a content checksum.
 An orphan with existing destination files cannot be a normal initial-creation
 interruption; recovery preserves those files for manual journal review.
+Repeated recovery must not reinterpret that ambiguity as rollback authorization;
+legacy markers without initial STAGING history remain blocked as well.
 
 1. Persist STAGING and write/fsync all proposed addition files in the transaction
    staging directory. Staging never alters canonical records.
@@ -167,3 +169,7 @@ stage failures, partial installation, journal/commit interruption, rollback
 interruption, concurrent apply and preservation of human edits. They exercise
 real no-replace links and OS locks, not only a simulated transaction model.
 The host repository's canonical records are not populated by these tests.
+
+See the [D.1 review and fixes](transaction-review-d1.md) and the separate
+[native Windows 11/NTFS checklist](windows11-ntfs-checklist.md). Native Windows
+results must be distinguished from portable tests and mocked API checks.
