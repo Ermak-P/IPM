@@ -37,6 +37,7 @@ FILES += ['tools/knowledge_graph.py', 'tools/tests/test_graph.py', 'docs/graphs-
 FILES += ['tools/compatibility_inspector.py', 'tools/tests/test_compatibility.py',
           'docs/compatibility-inspector.md', 'tools/examples/existing-knowledge/fixture.json',
           'tools/examples/existing-knowledge/README.md']
+FILES += ['tools/compatibility_adapter.py', 'tools/tests/test_adapter.py', 'docs/compatibility-adapter.md']
 PLACEHOLDERS = [directory + '/.gitkeep' for directory in DIRECTORIES
                 if directory not in ['schema', 'docs', 'tools', 'tools/tests', 'tools/examples', 'tools/examples/existing-knowledge']]
 SOURCE = Path(__file__).resolve().parents[1]
@@ -291,7 +292,7 @@ def validate(base):
 
 def _main(stack):
     parser = argparse.ArgumentParser(description='Offline universal architecture knowledge base v1')
-    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract', 'normalize', 'populate', 'build', 'report', 'inspect-compatibility'])
+    parser.add_argument('command', choices=['init', 'validate', 'check-scaffold', 'version', 'scan', 'extract', 'normalize', 'populate', 'build', 'report', 'inspect-compatibility', 'adapt-compatibility'])
     parser.add_argument('populate_action', nargs='?', choices=['prepare', 'apply', 'status', 'recover'])
     parser.add_argument('--root', type=Path, default=Path.cwd(), help='existing host repository directory')
     parser.add_argument('--json', action='store_true', help='machine-readable deterministic output')
@@ -309,6 +310,17 @@ def _main(stack):
         parser.error('--view requires build')
     if args.write_generated and args.command not in ['build', 'report']:
         parser.error('--write-generated requires build/report')
+    if args.command == 'adapt-compatibility':
+        if args.populate_action or args.plan or args.approve or args.dry_run or args.exclude:
+            parser.error('adapt-compatibility accepts only --root and --json')
+        from compatibility_adapter import CompatibilityAdapter
+        result = CompatibilityAdapter().propose(args.root)
+        if args.json or not result['ok']:
+            print(json.dumps(result, sort_keys=True))
+        else:
+            print('Read-only compatibility proposal: ' + json.dumps(result['metrics'], sort_keys=True))
+            print('Structural candidates only; integration and insertion are not approved.')
+        return 0 if result['ok'] else 1
     if args.command == 'inspect-compatibility':
         if args.populate_action or args.plan or args.approve or args.dry_run or args.exclude:
             parser.error('inspect-compatibility accepts only --root and --json')

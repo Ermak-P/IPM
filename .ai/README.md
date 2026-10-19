@@ -73,3 +73,8 @@ Stage 3.2 adds strictly read-only inspection of independently owned `.ai`:
 `python -B .ai/tools/kb.py inspect-compatibility --root /existing/project --json`.
 No installation, migration or graph activation is performed; see
 [scope, output, ownership and safety limits](docs/compatibility-inspector.md).
+
+Stage 3.3 provides bounded read-only compatibility proposals for explicit synthetic
+formats: `python -B .ai/tools/kb.py adapt-compatibility --root /synthetic/project --json`.
+See [mapping rules, closure validation and blocking policy](docs/compatibility-adapter.md).
+Proposals never authorize migration, canonical insertion or graph activation.
